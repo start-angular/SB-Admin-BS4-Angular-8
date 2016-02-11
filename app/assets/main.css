@@ -1,0 +1,187 @@
+#toggle-sidebar {
+  position: fixed;
+  top: 0px;
+  left: 5px;
+  color: #FFF;
+  background: #222;
+  font-size: 23px;
+  z-index: 3;
+  display: none; }
+
+.btn:focus {
+  outline: 3px auto #FFF; }
+
+.topnav {
+  border-radius: 0;
+  background-color: #222;
+  padding: 6px;
+  z-index: 2; }
+  .topnav .text-center {
+    text-align: center;
+    padding-left: 0; }
+  .topnav .top-right-nav .buy-now a {
+    color: #999; }
+  .topnav .top-right-nav .dropdown-menu {
+    top: 40px;
+    right: -5px;
+    left: auto; }
+    .topnav .top-right-nav .dropdown-menu .message-preview .media .media-body .media-heading {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 0; }
+    .topnav .top-right-nav .dropdown-menu .message-preview .media .media-body p {
+      margin: 0; }
+    .topnav .top-right-nav .dropdown-menu .message-preview .media .media-body p.last {
+      font-size: 13px;
+      margin-bottom: 0; }
+    .topnav .top-right-nav .dropdown-menu hr {
+      margin-top: 1px;
+      margin-bottom: 4px; }
+
+a:hover {
+  text-decoration: none; }
+
+.sidebar {
+  border-radius: 0;
+  position: fixed;
+  z-index: 3;
+  top: 50px;
+  left: 225px;
+  width: 225px;
+  margin-left: -225px;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  background-color: #222;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px; }
+  .sidebar .list-group a.list-group-item {
+    background: #222;
+    border: 0;
+    border-radius: 0;
+    color: #999;
+    text-decoration: none; }
+  .sidebar .list-group a:hover {
+    background: #151515;
+    color: #fff; }
+  .sidebar .sidebar-dropdown *:focus {
+    border-radius: none;
+    border: none; }
+  .sidebar .sidebar-dropdown .panel-title {
+    font-size: 1rem;
+    height: 50px;
+    margin-bottom: 0; }
+    .sidebar .sidebar-dropdown .panel-title a {
+      color: #999;
+      text-decoration: none;
+      font-weight: 400;
+      background: #222; }
+      .sidebar .sidebar-dropdown .panel-title a span {
+        position: relative;
+        display: block;
+        padding: .75rem 1.5rem;
+        padding-top: 1rem; }
+    .sidebar .sidebar-dropdown .panel-title a:hover, .sidebar .sidebar-dropdown .panel-title a:focus {
+      color: #fff;
+      outline: none;
+      outline-offset: -2px; }
+  .sidebar .sidebar-dropdown .panel-title:hover {
+    background: #151515; }
+  .sidebar .sidebar-dropdown .panel-collapse {
+    border-radious: 0;
+    border: none; }
+    .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item {
+      border-radius: 0;
+      background-color: #222;
+      border: 0 solid transparent; }
+      .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item a {
+        color: #999; }
+      .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item a:hover {
+        color: #FFF; }
+    .sidebar .sidebar-dropdown .panel-collapse .panel-body .list-group-item:hover {
+      background: #151515; }
+
+.bg-white {
+  background: #fff; }
+
+.main-container {
+  margin: 50px 0 0 225px;
+  padding: 10px;
+  -ms-overflow-x: hidden;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1; }
+
+.chat-panel .chat-dropdown {
+  margin-top: -3px; }
+.chat-panel .chat {
+  height: 350px;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .chat-panel .chat .left img {
+    margin-right: 15px; }
+  .chat-panel .chat .right img {
+    margin-left: 15px; }
+  .chat-panel .chat li {
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #999; }
+.chat-panel .card-footer input {
+  padding: 3px; }
+
+/* RTL ashboard */
+.sidebarPushRight {
+  left: 225px !important;
+  z-index: 10; }
+
+.mainContainerPushLeft {
+  margin: 55px 255px 0 0; }
+
+/* End */
+.display-sm {
+  display: none; }
+
+.hide-sm {
+  display: block; }
+
+@media (min-width: 0) {
+  .navbar-toggleable-xs {
+    display: block !important; } }
+@media screen and (max-width: 600px) {
+  .topnav .text-center a {
+    font-size: 20px; } }
+@media screen and (max-width: 768px) {
+  #toggle-sidebar {
+    display: block; }
+
+  .topnav .text-center {
+    padding-left: 55px; }
+
+  .top-right-nav {
+    display: none; }
+
+  .navbar-brand {
+    float: none;
+    display: inline-block; }
+
+  .show-name {
+    display: block !important;
+    z-index: 1; }
+
+  .display-sm {
+    display: block; }
+
+  .hide-sm {
+    display: none; }
+
+  .sidebar {
+    left: 0; }
+
+  .main-container {
+    margin-left: 0; } }
+
+/*# sourceMappingURL=main.css.map */
