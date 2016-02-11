@@ -8,7 +8,6 @@ It is something similar to the Angular Quick Start but does the entire build wit
 
 - Ready to go, statically typed build system using gulp for working with TypeScript.
 - Production and development builds.
-- Sample unit tests with Jasmine and Karma.
 - End-to-end tests with Protractor.
 - Development server with Livereload.
 - Following the best practices for your application’s structure.
@@ -19,11 +18,6 @@ It is something similar to the Angular Quick Start but does the entire build wit
 
 **Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
 
-You must have `ts-node` installed as global. If you don't, use:
-
-```bash
-npm install -g ts-node
-```
 
 In order to start the seed use:
 ## Installation
@@ -33,7 +27,13 @@ In order to start the seed use:
 $ git clone git@github.com:start-angular/SB-Admin-BS4-Angular-2.git
 ```
 
-####2.  Make sure you have [npm](https://www.npmjs.org/) and [ts-node](https://www.npmjs.com/package/ts-node) installed globally
+####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
+
+You must have `ts-node` installed as global. If you don't, use:
+
+```bash
+npm install -g ts-node
+```
 
 ####3. On the command prompt run the following commands
 
