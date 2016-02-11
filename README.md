@@ -26,16 +26,27 @@ npm install -g ts-node
 ```
 
 In order to start the seed use:
+## Installation
+####1. Clone this project or Download that ZIP file
 
+```sh
+$ git clone git@github.com:start-angular/SB-Admin-BS4-Angular-2.git
+```
 
-```bash
-git clone git@github.com:start-angular/SB-Admin-BS4-Angular-2.git
-cd SB-Admin-BS4-Angular-2
-# install the project's dependencies
-npm install
-# watches your files and uses livereload by default
-npm start
+####2.  Make sure you have [npm](https://www.npmjs.org/) and [ts-node](https://www.npmjs.com/package/ts-node) installed globally
 
+####3. On the command prompt run the following commands
+
+```sh
+$ cd `project-directory`
+```
+
+```sh
+$ npm install 
+```
+
+```sh
+$ npm start
 ```
 
 # Configuration
