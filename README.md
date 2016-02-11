@@ -1,8 +1,10 @@
-# Introduction
+# SB Admin rewritten in AngularJS and Bootstrap 4
 
 Simple Dashboard Admin App built using Angular 2 and Bootstrap 4
 
-It is something similar to the Angular Quick Start but does the entire build with gulp.
+This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme.
+
+Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
 `SB Admin BS 4 Angular2` provides the following features:
 
@@ -14,13 +16,13 @@ It is something similar to the Angular Quick Start but does the entire build wit
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
 - Basic Service Worker, which implements "Cache then network strategy".
 
-# How to start
+## How to start
 
 **Note** that this seed project requires node v4.x.x or higher and npm 2.14.7.
 
 
 In order to start the seed use:
-## Installation
+### Installation
 ####1. Clone this project or Download that ZIP file
 
 ```sh
@@ -49,7 +51,7 @@ $ npm install
 $ npm start
 ```
 
-# Configuration
+### Configuration
 
 Default application server configuration
 
@@ -59,7 +61,7 @@ var LIVE_RELOAD_PORT = 4002;
 var APP_BASE         = '/';
 ```
 
-# Directory Structure
+### Directory Structure
 
 ```
 .
@@ -115,5 +117,3 @@ var APP_BASE         = '/';
 ├── tslint.json
 └── typings.json
 ```
-
-Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
