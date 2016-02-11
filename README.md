@@ -11,7 +11,6 @@ It is something similar to the Angular Quick Start but does the entire build wit
 - Sample unit tests with Jasmine and Karma.
 - End-to-end tests with Protractor.
 - Development server with Livereload.
-- Experimental hot loading support.
 - Following the best practices for your application’s structure.
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
 - Basic Service Worker, which implements "Cache then network strategy".
@@ -105,7 +104,5 @@ var APP_BASE         = '/';
 ├── tslint.json
 └── typings.json
 ```
-
-# Change Log
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
