@@ -35,6 +35,7 @@ export const DOCS_DEST            = 'docs';
 export const APP_DEST             = `dist/${ENV}`;
 export const ASSETS_DEST          = `${APP_DEST}/assets`;
 export const CSS_DEST             = `${APP_DEST}/css`;
+export const FONT_DEST            = `${APP_DEST}/fonts`;
 export const JS_DEST              = `${APP_DEST}/js`;
 export const APP_ROOT             = ENV === 'dev' ? `${APP_BASE}${APP_DEST}/` : `${APP_BASE}`;
 export const VERSION              = appVersion();
@@ -63,24 +64,20 @@ export const DEV_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencie
   { src: 'angular2/bundles/angular2.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/router.js', inject: 'libs', dest: JS_DEST },
   { src: 'angular2/bundles/http.js', inject: 'libs', dest: JS_DEST },
-  { src: 'ng2-bootstrap/bundles/ng2-bootstrap.min.js', inject: 'libs', dest: JS_DEST },
-  { src: 'c3/c3.min.js', inject: 'libs', dest: JS_DEST },
-  { src: 'c3/node_modules/d3/d3.min.js', inject: 'libs', dest: JS_DEST }
+  { src: 'ng2-bootstrap/bundles/ng2-bootstrap.min.js', inject: 'libs', dest: JS_DEST }
 ]);
 
 export const PROD_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencies([
   { src: 'reflect-metadata/Reflect.js', inject: 'shims' },
   { src: 'es6-shim/es6-shim.min.js', inject: 'shims' },
-  { src: 'angular2/bundles/angular2-polyfills.min.js', inject: 'libs' },
-  { src: 'bootstrap/dist/css/bootstrap.min.css', inject: true }
+  { src: 'angular2/bundles/angular2-polyfills.min.js', inject: 'libs' }
 ]);
 
 // Declare local files that needs to be injected
 export const APP_ASSETS: InjectableDependency[] = [
-  { src: `${ASSETS_SRC}/font-awesome-4.5.0/css/font-awesome.css`, inject: true, dest: CSS_DEST },
+  { src: `${ASSETS_SRC}/font-awesome-4.5.0/css/font-awesome.min.css`, inject: true, dest: CSS_DEST },
   { src: `${ASSETS_SRC}/bootstrap/bootstrap.css`, inject: true, dest: CSS_DEST },
-  { src: `${ASSETS_SRC}/main.css`, inject: true, dest: CSS_DEST },
-  { src: `node_modules/c3/c3.min.css`, inject: true, dest: CSS_DEST }
+  { src: `${ASSETS_SRC}/main.css`, inject: true, dest: CSS_DEST }
 ];
 
 

@@ -33,7 +33,7 @@ build/Release
 .idea
 .vscode
 
-dist
+
 dev
 docs
 lib

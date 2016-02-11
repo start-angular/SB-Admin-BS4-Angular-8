@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><%= APP_TITLE %></title>
+  <title>SB Admin Angular2 BS4</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- inject:css -->
+  <link rel="stylesheet" href="css/all.css">
   <!-- endinject -->
 </head>
 <body>
@@ -39,23 +40,15 @@
   <!-- endinject -->
 
   <!-- inject:js -->
+  <script src="js/shims.js"></script>
+  <script src="js/app.js"></script>
   <!-- endinject -->
 
- <!--  <% if (ENV === 'dev') { %>
-  <script>System.config(<%= JSON.stringify(SYSTEM_CONFIG) %>)</script>
-
-  <script>
-    System.import('<%= BOOTSTRAP_MODULE %>')
-      .catch(function (e) {
-        console.error(e,
-          'Report this error at https://github.com/mgechev/angular2-seed/issues');
-      });
-  </script>
-  <% } %> -->
+ <!--   -->
 
   <!-- testing script -->
     <script>
-      System.config(<%= JSON.stringify(SYSTEM_CONFIG) %>)
+      System.config({"defaultJSExtensions":true,"paths":{"main":"/main","hot_loader_main":"/hot_loader_main","angular2/*":"/angular2/*","rxjs/*":"/rxjs/*","*":"/node_modules/*"},"packages":{"angular2":{"defaultExtension":false},"rxjs":{"defaultExtension":false}}})
     
       System.import('main')
             .then(null, console.error.bind(console));
