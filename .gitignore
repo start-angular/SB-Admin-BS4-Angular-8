@@ -36,7 +36,7 @@ build/Release
 .vscode
 *.iml
 
-dist
+/dist/dev/
 dev
 docs
 lib
