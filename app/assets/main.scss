@@ -250,3 +250,23 @@ a:hover{
         margin-left : 0;
     }
 }
+.carousel {
+    .carousel-inner {
+        .carousel-item{
+            img{
+                width : 100%;
+                max-height : 373px;
+            }
+        }
+        .fa-chevron-left:before {
+            position: absolute;
+            top: 46%;
+            left : 50px;
+        }
+        .fa-chevron-right:before {
+            position: absolute;
+            top: 46%;
+            right : 50px;
+        }
+    }
+}

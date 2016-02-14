@@ -17,6 +17,7 @@ export = function buildAssetsDev(gulp, plugins) {
 
     return gulp.src([
         join(APP_SRC+'/assets/font-awesome-4.5.0/', '**'),
+        join(APP_SRC, '**'),
         '!' + join(APP_SRC, '**', '*.ts'),
         '!' + join(APP_SRC, '**', '*.css'),
         '!' + join(APP_SRC, '**', '*.html'),
