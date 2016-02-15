@@ -26,7 +26,7 @@ In order to start the seed use:
 ####1. Clone this project or Download that ZIP file
 
 ```sh
-$ git clone git@github.com:start-angular/SB-Admin-BS4-Angular-2.git
+$ git clone git@github.com/start-angular/SB-Admin-BS4-Angular-2.git
 ```
 
 ####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
