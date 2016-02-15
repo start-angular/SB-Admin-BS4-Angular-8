@@ -182,7 +182,10 @@ a:hover {
     left: 0; }
 
   .main-container {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .loading {
+    left: 39% !important; } }
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
   max-height: 373px; }
@@ -194,5 +197,13 @@ a:hover {
   position: absolute;
   top: 46%;
   right: 50px; }
+
+.loading {
+  font-size: 100px;
+  width: 100px;
+  position: absolute;
+  top: 42%;
+  left: 45%;
+  color: #0badaa; }
 
 /*# sourceMappingURL=main.css.map */

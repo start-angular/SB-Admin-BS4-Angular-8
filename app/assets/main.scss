@@ -249,6 +249,9 @@ a:hover{
     .main-container{
         margin-left : 0;
     }
+    .loading {
+        left: 39% !important;
+    }
 }
 .carousel {
     .carousel-inner {
@@ -269,4 +272,12 @@ a:hover{
             right : 50px;
         }
     }
+}
+.loading {
+    font-size: 100px;
+    width :100px;
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    color: darken(#0DC5C1,5%);
 }

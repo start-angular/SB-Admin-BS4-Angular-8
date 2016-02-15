@@ -21,6 +21,8 @@ export = function buildAssetsDev(gulp, plugins) {
         '!' + join(APP_SRC, '**', '*.ts'),
         '!' + join(APP_SRC, '**', '*.css'),
         '!' + join(APP_SRC, '**', '*.html'),
+        '!' + join(APP_SRC, '**', '*.less'),
+        '!' + join(APP_SRC, '**', '*.scss'),
       ])
       .pipe(onlyDirs(es))
       .pipe(gulp.dest(APP_DEST));
