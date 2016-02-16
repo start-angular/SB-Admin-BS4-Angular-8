@@ -48,6 +48,7 @@
     "gulp-inline-ng2-template": "^0.0.7",
     "gulp-load-plugins": "^0.10.0",
     "gulp-plumber": "~1.0.1",
+    "gulp-sass": "^2.2.0",
     "gulp-shell": "~0.4.3",
     "gulp-sourcemaps": "~1.5.2",
     "gulp-template": "^3.0.0",

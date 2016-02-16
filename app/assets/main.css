@@ -115,6 +115,7 @@ a:hover {
 
 .chat-panel .chat-dropdown {
   margin-top: -3px; }
+
 .chat-panel .chat {
   height: 350px;
   overflow-y: scroll;
@@ -130,6 +131,7 @@ a:hover {
     margin-right: 15px;
     padding-bottom: 5px;
     border-bottom: 1px dotted #999; }
+
 .chat-panel .card-footer input {
   padding: 3px; }
 
@@ -151,48 +153,44 @@ a:hover {
 @media (min-width: 0) {
   .navbar-toggleable-xs {
     display: block !important; } }
+
 @media screen and (max-width: 600px) {
   .topnav .text-center a {
     font-size: 20px; } }
+
 @media screen and (max-width: 768px) {
   #toggle-sidebar {
     display: block; }
-
   .topnav .text-center {
     padding-left: 55px; }
-
   .top-right-nav {
     display: none; }
-
   .navbar-brand {
     float: none;
     display: inline-block; }
-
   .show-name {
     display: block !important;
     z-index: 1; }
-
   .display-sm {
     display: block; }
-
   .hide-sm {
     display: none; }
-
   .sidebar {
     left: 0; }
-
   .main-container {
     margin-left: 0; }
-
   .loading {
     left: 39% !important; } }
+
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
   max-height: 373px; }
+
 .carousel .carousel-inner .fa-chevron-left:before {
   position: absolute;
   top: 46%;
   left: 50px; }
+
 .carousel .carousel-inner .fa-chevron-right:before {
   position: absolute;
   top: 46%;
@@ -205,5 +203,3 @@ a:hover {
   top: 42%;
   left: 45%;
   color: #0badaa; }
-
-/*# sourceMappingURL=main.css.map */

@@ -28,6 +28,7 @@ gulp.task('postinstall', done =>
 gulp.task('build.dev', done =>
   runSequence('clean.dist',
               'tslint',
+              'build.sass.dev',
               'build.assets.dev',
               'build.js.dev',
               'build.index.dev',
@@ -39,6 +40,7 @@ gulp.task('build.prod', done =>
   runSequence('clean.dist',
               'clean.tmp',
               'tslint',
+              'build.sass.prod',
               'build.assets.prod',
               'build.html_css.prod',
               'build.js.prod',

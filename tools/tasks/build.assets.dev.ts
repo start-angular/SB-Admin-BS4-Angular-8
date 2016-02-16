@@ -5,7 +5,9 @@ export = function buildAssetsDev(gulp, plugins) {
   return function () {
     return gulp.src([
         join(APP_SRC, '**'),
-        '!' + join(APP_SRC, '**', '*.ts')
+        '!' + join(APP_SRC, '**', '*.ts'),
+        '!' + join(APP_SRC, '**', '*.less'),
+        '!' + join(APP_SRC, '**', '*.scss'),
       ])
       .pipe(gulp.dest(APP_DEST));
   };

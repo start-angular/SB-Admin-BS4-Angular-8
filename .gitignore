@@ -1,3 +1,4 @@
+*.css.map
 .DS_Store
 /app/.DS_Store
 # Logs
