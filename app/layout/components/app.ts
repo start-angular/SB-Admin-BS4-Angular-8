@@ -8,8 +8,8 @@ import {HomeCmp} from '../../pages/home/components/home';
 import {GridCmp} from '../../pages/grid/components/grid';
 import {FormCmp} from '../../pages/forms/components/forms';
 import {TableCmp} from '../../pages/tables/components/tables';
-/*import {ChartCmp} from '../../pages/charts/components/charts';*/
-/*import {RtlDashboardCmp} from '../../pages/rtl-dashboard/components/rtl_dashboard';*/
+/*import {DateTimeCmp} from '../../pages/date-time/components/date_time';
+import {RtlDashboardCmp} from '../../pages/rtl-dashboard/components/rtl_dashboard';*/
 
 
 import {BSCmp} from '../../pages/bootstrap-element/components/bs_element';
@@ -37,7 +37,7 @@ import {NameList} from '../../shared/services/name_list';*/
   { path: '/bootstrap-element', component: BSCmp, as: 'BSElement' },
   { path: '/component', component: ComponentCmp, as: 'Component' },
   { path: '/blank-page', component: BlankPageCmp, as: 'BlankPage' },
-  /*  { path: '/charts', component: ChartCmp, as: 'Charts' },
+  /*{ path: '/charts', component: DateTimeCmp, as: 'DateTime' },
   { path: '/about', component: AboutCmp, as: 'About' },
   { path: '/rtl-dashboard', component: RtlDashboardCmp, as: 'RTL-Dashboard' }*/
 ])
