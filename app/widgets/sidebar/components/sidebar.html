@@ -1,7 +1,7 @@
+<button class="btn btn-default" id="toggle-sidebar" type="button" (click)="eventCalled()">
+    &#9776;
+</button>
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
-    <button class="btn btn-default" id="toggle-sidebar" type="button" (click)="eventCalled()">
-        &#9776;
-    </button>
     <ul class="list-group">
         <a [routerLink]="['Home']" class="list-group-item">
             <i class="fa fa-fw fa-dashboard"></i> Dashboard

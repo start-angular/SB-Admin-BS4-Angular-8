@@ -75,6 +75,11 @@ a:hover{
     bottom: 0;
     overflow-x: hidden;
     padding-bottom: 40px;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
     .list-group{
         a.list-group-item{
             background: $topnav-background-color;
