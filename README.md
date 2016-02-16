@@ -6,6 +6,8 @@ This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
+##[Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/index.html)
+
 `SB Admin BS 4 Angular2` provides the following features:
 
 - Ready to go, statically typed build system using gulp for working with TypeScript.
