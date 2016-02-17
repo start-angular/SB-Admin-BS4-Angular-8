@@ -1,8 +1,8 @@
 import * as gulp from 'gulp';
 import {runSequence, task} from './tools/utils';
 
-/*gulp.src('node_modules/moment/moment.js')
-  .pipe(gulp.dest('./node_modules'));*/
+gulp.src('node_modules/moment/moment.js')
+  .pipe(gulp.dest('./node_modules'));
 
 // --------------
 // Clean (override).
