@@ -18,7 +18,8 @@
   z-index: 2; }
   .topnav .text-center {
     text-align: center;
-    padding-left: 0; }
+    padding-left: 0;
+    cursor: pointer; }
   .topnav .top-right-nav .buy-now a {
     color: #999; }
   .topnav .top-right-nav .dropdown-menu {
@@ -172,7 +173,8 @@ a:hover {
     display: none; }
   .navbar-brand {
     float: none;
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
   .show-name {
     display: block !important;
     z-index: 1; }
@@ -186,6 +188,9 @@ a:hover {
     margin-left: 0; }
   .loading {
     left: 39% !important; } }
+
+.carousel .carousel-control {
+  cursor: pointer; }
 
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
@@ -263,11 +268,66 @@ a:hover {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-/* .loading {
-    font-size: 100px;
-    width :100px;
-    position: absolute;
-    top: 42%;
-    left: 45%;
-    color: darken(#0DC5C1,5%);
-} */
+.login-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: #222;
+  text-align: center;
+  color: #fff;
+  padding: 3em; }
+  .login-page .col-lg-4 {
+    padding: 0; }
+  .login-page .input-lg {
+    height: 46px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0; }
+  .login-page .input-underline {
+    background: 0 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border-radius: 0; }
+  .login-page .input-underline:focus {
+    border-bottom: 2px solid #fff;
+    box-shadow: none; }
+  .login-page .rounded-btn {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    background: #222;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 40px;
+    padding: 0 25px; }
+  .login-page .rounded-btn:hover, .login-page .rounded-btn:focus, .login-page .rounded-btn:active, .login-page .rounded-btn:visited {
+    color: white;
+    border: 2px solid white;
+    outline: none; }
+  .login-page h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px; }
+    .login-page h1 small {
+      color: rgba(255, 255, 255, 0.7); }
+  .login-page .form-group {
+    padding: 8px 0; }
+    .login-page .form-group input::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.6) !important; }
+    .login-page .form-group input:-moz-placeholder {
+      /* Firefox 18- */
+      color: rgba(255, 255, 255, 0.6) !important; }
+    .login-page .form-group input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: rgba(255, 255, 255, 0.6) !important; }
+    .login-page .form-group input:-ms-input-placeholder {
+      color: rgba(255, 255, 255, 0.6) !important; }
+  .login-page .form-content {
+    padding: 40px 0; }
