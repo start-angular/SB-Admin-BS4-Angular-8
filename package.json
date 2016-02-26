@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed",
+  "name": "SB Admin BS 4 angular2",
   "version": "0.0.0",
   "description": "Seed for Angular 2 apps",
   "repository": {
-    "url": "https://github.com/mgechev/angular2-seed"
+    "url": "https://github.com/start-angular/SB-Admin-BS4-Angular-2"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
