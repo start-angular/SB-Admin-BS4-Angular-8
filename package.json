@@ -27,8 +27,8 @@
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start"
   },
-  "author": "Minko Gechev <mgechev>",
-  "license": "MIT",
+  "author": "Nitin Kumar Mishra",
+  "license": "Geekyants",
   "devDependencies": {
     "angular2-hot-loader": "0.0.17",
     "async": "^1.4.2",
