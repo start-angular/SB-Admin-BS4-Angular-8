@@ -71,6 +71,9 @@ a:hover {
   .sidebar .list-group a:hover {
     background: #151515;
     color: #fff; }
+  .sidebar .list-group a.router-link-active {
+    background: #151515;
+    color: #fff; }
   .sidebar .sidebar-dropdown *:focus {
     border-radius: none;
     border: none; }

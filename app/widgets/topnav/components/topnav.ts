@@ -27,4 +27,7 @@ export class TopNavCmp {
 	gotoDashboard() {
 		this._router.navigate(['Home']);
 	}
+	gotoLogin() {
+		this._router.navigate(['Login']);
+	}
 }

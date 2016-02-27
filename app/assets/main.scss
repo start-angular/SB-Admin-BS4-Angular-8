@@ -93,6 +93,10 @@ a:hover{
             background: darken($topnav-background-color, 5%);
             color: #fff;
         }
+        a.router-link-active{
+            background: darken($topnav-background-color, 5%);
+            color: #fff;
+        }
     }
     .sidebar-dropdown{
         *:focus{
