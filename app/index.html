@@ -41,9 +41,8 @@
   <!-- inject:js -->
   <!-- endinject -->
 
- <!--  <% if (ENV === 'dev') { %>
+ <% if (ENV === 'dev') { %>
   <script>System.config(<%= JSON.stringify(SYSTEM_CONFIG) %>)</script>
-
   <script>
     System.import('<%= BOOTSTRAP_MODULE %>')
       .catch(function (e) {
@@ -51,14 +50,6 @@
           'Report this error at https://github.com/mgechev/angular2-seed/issues');
       });
   </script>
-  <% } %> -->
-
-  <!-- testing script -->
-    <script>
-      System.config(<%= JSON.stringify(SYSTEM_CONFIG) %>)
-    
-      System.import('main')
-            .then(null, console.error.bind(console));
-    </script>
+  <% } %>
 </body>
 </html>
