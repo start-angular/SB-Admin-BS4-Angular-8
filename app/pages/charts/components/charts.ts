@@ -8,7 +8,8 @@ import {Router} from 'angular2/router';
 export class ChartCmp {
 	constructor(private _router: Router) { }
 	ngOnInit() {
-		$('#container').highcharts({
+        var container:any = $('#container');
+        container.highcharts({
 		    chart: {
 		        type: 'area'
 		    },
@@ -63,7 +64,8 @@ export class ChartCmp {
 		        data: [2, 2, 2, 6, 13, 30, 46]
 		    }]
 		});
-		$('#area-chart').highcharts({
+        var areaChart: any = $('#area-chart');
+        areaChart.highcharts({
 	        chart: {
 	            type: 'area'
 	        },
@@ -87,7 +89,8 @@ export class ChartCmp {
 	            data: [3, 4, 4, -2, 5]
 	        }]
 	    });
-	    $('#total-fruit').highcharts({
+        var totalFruit: any = $('#total-fruit');
+        totalFruit.highcharts({
             chart: {
                 type: 'column'
             },
@@ -140,7 +143,8 @@ export class ChartCmp {
                 stack: 'female'
             }]
         });
-        $('#snow-depth').highcharts({
+        var snowDepth: any = $('#snow-depth');
+        snowDepth.highcharts({
             chart: {
                 type: 'spline'
             },
