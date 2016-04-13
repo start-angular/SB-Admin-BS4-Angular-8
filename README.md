@@ -12,7 +12,6 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 - Ready to go, statically typed build system using gulp for working with TypeScript.
 - Production and development builds.
-- End-to-end tests with Protractor.
 - Development server with Livereload.
 - Following the best practices for your application’s structure.
 - Manager of your type definitions using [typings](https://github.com/typings/typings).
