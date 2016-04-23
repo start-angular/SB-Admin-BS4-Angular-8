@@ -52,6 +52,8 @@ $ npm install
 $ npm start
 ```
 
+####4. In your browser go to:   http://localhost:8080/dist/dev/
+
 ### Configuration
 
 Default application server configuration
