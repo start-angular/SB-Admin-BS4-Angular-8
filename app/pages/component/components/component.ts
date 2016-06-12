@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 import {CORE_DIRECTIVES} from '@angular/common';
 import { AlertComponent, BUTTON_DIRECTIVES, DROPDOWN_DIRECTIVES, PAGINATION_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
 import { PROGRESSBAR_DIRECTIVES, RatingComponent, TAB_DIRECTIVES} from 'ng2-bootstrap/ng2-bootstrap';
@@ -9,6 +10,7 @@ import {TOOLTIP_DIRECTIVES, TYPEAHEAD_DIRECTIVES} from 'ng2-bootstrap/ng2-bootst
     selector: 'component-cmp',
     templateUrl: 'component.html',
     directives: [
+		ROUTER_DIRECTIVES,
 		CORE_DIRECTIVES,
 		AlertComponent,
 		BUTTON_DIRECTIVES,
