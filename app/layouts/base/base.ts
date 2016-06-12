@@ -1,4 +1,4 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, ViewEncapsulation, ViewContainerRef} from '@angular/core';
 import { ROUTER_DIRECTIVES, Routes } from '@angular/router';
 
 import {LoginComponent} from '../../pages/login/components/login';
@@ -19,4 +19,10 @@ import {DashboardComponent} from '../dashboard/components/dashboard';
     { path: 'dashboard', component: DashboardComponent }
 ])
 
-export class AppComponent { }
+export class AppComponent {
+	viewContainerRef: any = null;
+	public constructor(viewContainerRef:ViewContainerRef) {
+	    // You need this small hack in order to catch application root view container ref
+	    this.viewContainerRef = viewContainerRef;
+	}
+}
