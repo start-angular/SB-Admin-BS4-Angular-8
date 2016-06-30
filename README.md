@@ -52,7 +52,7 @@ $ npm install
 $ npm start
 ```
 
-####4. In your browser go to:   http://localhost:8080/dist/dev/
+####4. In your browser go to:   http://localhost:5555
 
 ### Configuration
 
@@ -69,7 +69,6 @@ var APP_BASE         = '/';
 ```
 .
 ├── CONTRIBUTING.md
-├── LICENSE
 ├── README.md
 ├── app
 │   ├── layouts
