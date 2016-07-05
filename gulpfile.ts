@@ -4,6 +4,9 @@ import * as runSequence from 'run-sequence';
 import { PROJECT_TASKS_DIR, SEED_TASKS_DIR } from './tools/config';
 import { loadTasks } from './tools/utils';
 
+// just to resolve build issue for moment.js
+gulp.src('node_modules/moment/moment.js')
+  .pipe(gulp.dest('./node_modules'));
 
 loadTasks(SEED_TASKS_DIR);
 loadTasks(PROJECT_TASKS_DIR);
