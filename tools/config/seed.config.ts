@@ -160,7 +160,7 @@ export class SeedConfig {
    * The folder of the applications css files.
    * @type {string}
    */
-  CSS_SRC = `${this.APP_SRC}/css`;
+  CSS_SRC = `${this.APP_SRC}/assets`;
 
   /**
    * The directory of the applications tools
@@ -266,7 +266,7 @@ export class SeedConfig {
    * The default value is false. Override with the '--scss' flag.
    * @type {boolean}
    */
-  ENABLE_SCSS = argv['scss'] || false;
+  ENABLE_SCSS = argv['scss'] || true;
 
   /**
    * The list of NPM dependcies to be injected in the `index.html`.
@@ -284,7 +284,7 @@ export class SeedConfig {
    * @type {InjectableDependency[]}
    */
   APP_ASSETS: InjectableDependency[] = [
-    { src: `${this.CSS_SRC}/main.${this.getInjectableStyleExtension()}`, inject: true, vendor: false },
+    // { src: `${this.CSS_SRC}/main.${this.getInjectableStyleExtension()}`, inject: true, vendor: false },
   ];
 
   /**

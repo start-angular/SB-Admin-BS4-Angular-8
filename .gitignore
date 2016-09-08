@@ -36,7 +36,8 @@ build/Release
 *.iml
 
 /tools/**/*.js
-dist
+dist/dev
+dist/tmp
 dev
 docs
 lib
