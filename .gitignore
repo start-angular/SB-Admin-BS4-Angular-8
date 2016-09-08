@@ -47,6 +47,9 @@ tmp
 gulpfile.js
 gulpfile.js.map
 
+<<<<<<< HEAD
 # OS X trash files
 .DS_Store
 
+=======
+>>>>>>> f00600ac17dccc86a560c7f19681f05b34b2a296

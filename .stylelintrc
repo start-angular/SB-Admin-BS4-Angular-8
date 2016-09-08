@@ -3,11 +3,15 @@
   "rules": {
     "block-no-empty": null,
     "at-rule-empty-line-before": null,
+<<<<<<< HEAD
     "rule-non-nested-empty-line-before": null,
     "selector-pseudo-class-no-unknown" : [ true, {
       "ignorePseudoClasses": [
         "host"
       ]
     }]
+=======
+    "rule-non-nested-empty-line-before": null
+>>>>>>> f00600ac17dccc86a560c7f19681f05b34b2a296
   }
 }
