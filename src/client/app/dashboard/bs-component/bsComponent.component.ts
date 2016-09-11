@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 	moduleId: module.id,
     selector: 'bs-component',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    templateUrl: './bs-component.component.html',
+    templateUrl: './bs-Component.component.html',
     styles: [`
     	.tooltip.customClass .tooltip-inner {
     		color: #880000;
