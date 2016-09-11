@@ -47,6 +47,7 @@ export class BSComponentComponent {
 			closable: true
 		}
 	];
+	
 	// Progressbar
 	public max:number = 200;
 	public showWarning:boolean;
