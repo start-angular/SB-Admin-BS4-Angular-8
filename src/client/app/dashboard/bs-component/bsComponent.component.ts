@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
     selector: 'bs-component',
     changeDetection: ChangeDetectionStrategy.OnPush,
     templateUrl: './bs-Component.component.html',

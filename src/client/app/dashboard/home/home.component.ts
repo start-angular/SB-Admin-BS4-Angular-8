@@ -1,33 +1,34 @@
 import { Component } from '@angular/core';
+import './timeline.scss';
 
 /**
 *	This class represents the lazy loaded HomeComponent.
 */
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	selector: 'timeline-cmp',
 	templateUrl: 'timeline.html',
-	styleUrls: ['timeline.css'],
+	//styleUrls: ['timeline.scss']
 })
 export class TimelineComponent { }
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	selector: 'chat-cmp',
 	templateUrl: 'chat.html'
 })
 export class ChatComponent {}
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	selector: 'notifications-cmp',
 	templateUrl: 'notifications.html'
 })
 export class NotificationComponent { }
 
 @Component({
-	moduleId: module.id,
+	//moduleId: module.id,
 	selector: 'home-cmp',
 	templateUrl: 'home.component.html'
 })
