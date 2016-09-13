@@ -32,7 +32,8 @@
     "tests.all": "npm test && npm run e2e.ci",
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update",
-    "webpack-dev-server": "webpack-dev-server --inline --progress --content-base webpackDist/ --port 8080"
+    "webpack-dev-server": "webpack-dev-server --inline --progress --content-base webpackDist/ --port 8080",
+    "webpack-build": "rimraf webpackDist && NODE_ENV=production webpack -p --content-base webpackDist/ --progress --profile --colors"
   },
   "author": "Nitin Kumar Mishra",
   "license": "MIT",
