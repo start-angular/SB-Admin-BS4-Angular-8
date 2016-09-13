@@ -31,7 +31,8 @@
     "e2e.ci": "gulp build.prod --color && gulp build.js.e2e --color && gulp e2e --color",
     "tests.all": "npm test && npm run e2e.ci",
     "webdriver-start": "webdriver-manager start",
-    "webdriver-update": "webdriver-manager update"
+    "webdriver-update": "webdriver-manager update",
+    "webpack-dev-server": "webpack-dev-server --inline --progress --content-base webpackDist/ --port 8080"
   },
   "author": "Nitin Kumar Mishra",
   "license": "MIT",
@@ -49,6 +50,7 @@
     "connect": "^3.4.1",
     "connect-history-api-fallback": "^1.2.0",
     "connect-livereload": "^0.5.4",
+    "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.23.1",
     "cssnano": "^3.7.3",
     "deep-extend": "^0.4.1",
