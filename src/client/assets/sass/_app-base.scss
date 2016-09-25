@@ -401,22 +401,6 @@ a:hover{
     }
 }
 
-.loader {
-  position: fixed !important;
-  top: 50%;
-  left: 50%;
-  margin-top: -55px;
-  margin-left: -55px;
-  font-size: 11px;
-  text-indent: -99999em;
-  position: relative;
-  width: 10em;
-  height: 10em;
-  box-shadow: inset 0 0 0 1em #222222;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-}
 .spinner {
     position: fixed !important;
     top: 50%;
