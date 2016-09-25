@@ -1,0 +1,373 @@
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-xl-12">
+        <h2 class="page-header">
+            Bootstrap Grid
+        </h2>
+        <ol class="breadcrumb">
+            <li>
+                <i class="fa fa-dashboard"></i>  <a href="Javascript:void(0)" routerLink="/dashboard/home'">Dashboard</a>
+            </li>
+            <li class="active">
+                <i class="fa fa-th-list"></i> Component
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card card-block">
+			<h4 class="card-title">Modal</h4>
+			<!-- Large modal -->
+			<button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
+			<div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			        <div class="modal-content">
+			            <div class="modal-header">
+			                <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
+			                    <span aria-hidden="true">&times;</span>
+			                </button>
+			                <h5 class="modal-title">Large modal</h5>
+			            </div>
+			            <div class="modal-body">
+			                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae accusantium maiores, placeat, quasi laborum in vitae accusamus veritatis inventore nulla et quibusdam debitis ipsam consectetur eum, velit ea praesentium!
+			                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum nostrum a velit esse est, voluptatum quam eos ipsum laudantium facere iusto. Provident deleniti non temporibus ex tenetur, assumenda labore eos!
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.row -->
+<div class="row">
+	<div class="col-lg-12">
+		<div class="card card-block">
+			<h4 class="card-title">Alert</h4>
+			<alert *ngFor="let alert of alerts;let i = index" [type]="alert.type" dismissible="true" (close)="closeAlert(i)">
+				{{ alert?.msg }}
+			</alert>
+			<alert dismissOnTimeout="3000">This alert will dismiss in 3s</alert>
+			<button type="button" class='btn btn-primary' (click)="addAlert()">Add Alert</button>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="card card-block">
+			<h4 class="card-title">Single toggle</h4>
+			<pre class="card card-block card-header">{{singleModel}}</pre>
+			<button type="button" class="btn btn-primary"
+				[(ngModel)]="singleModel" btnCheckbox
+				btnCheckboxTrue="1" btnCheckboxFalse="0">
+				Single Toggle
+			</button>
+		</div>
+		<div class="card card-block">
+			<h4>Radio &amp; Uncheckable Radio</h4>
+			<pre class="card card-block card-header">{{radioModel || 'null'}}</pre>
+			<div class="btn-group">
+				<label class="btn btn-primary" [(ngModel)]="radioModel"
+				btnRadio="Left">Left</label>
+				<label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Middle">Middle</label>
+				<label class="btn btn-primary" [(ngModel)]="radioModel"
+				btnRadio="Right">Right</label>
+			</div>
+			<div class="btn-group">
+				<label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Left"
+				uncheckable>Left</label>
+				<label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Middle"
+				uncheckable>Middle</label>
+				<label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Right"
+				uncheckable>Right</label>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="card card-block">
+			<h4 class="card-title">Checkbox</h4>
+			<pre class="card card-block card-header">Model via JsonPipe: {{checkModel | json}}</pre>
+			<pre class="card card-block card-header">Left: {{checkModel.left}} | Middle: {{checkModel.middle}} | Right: {{checkModel.right}}</pre>
+			<h4 class="card-title">Checkbox</h4>
+			<div class="btn-group">
+				<label class="btn btn-primary" [(ngModel)]="checkModel.left"
+				btnCheckbox>Left</label>
+				<label class="btn btn-primary" [(ngModel)]="checkModel.middle" btnCheckbox>Middle</label>
+				<label class="btn btn-primary" [(ngModel)]="checkModel.right" btnCheckbox>Right</label>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card card-block">
+			<h4 class="card-title">Dropdown</h4>
+			<div (click)="$event.preventDefault()">
+				<!-- Simple dropdown -->
+				<span dropdown (on-toggle)="toggled($event)">
+					<a href id="simple-dropdown" dropdownToggle>
+						Click me for a dropdown, yo!
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="simple-dropdown">
+						<li *ngFor="let choice of items">
+							<a class="dropdown-item" href="#">{{choice}}</a>
+						</li>
+					</ul>
+				</span>
+
+				<!-- Single button -->
+				<div class="btn-group" dropdown [(isOpen)]="status.isopen">
+					<button id="single-button" type="button" class="btn btn-primary" dropdownToggle [disabled]="disabled">
+						Button dropdown <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="single-button">
+						<li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+						<li class="divider dropdown-divider"></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+
+				<!-- Split button -->
+				<div class="btn-group" dropdown>
+					<button id="split-button" type="button" class="btn btn-danger">Action</button>
+					<button type="button" class="btn btn-danger dropdown-toggle" dropdownToggle>
+						<span class="caret"></span>
+						<span class="sr-only">Split button!</span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="split-button">
+						<li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+						<li class="divider dropdown-divider"></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+
+				<hr/>
+				<p>
+					<button type="button" class="btn btn-primary btn-sm" (click)="toggleDropdown($event)">Toggle button dropdown
+					</button>
+					<button type="button" class="btn btn-warning btn-sm" (click)="disabled = !disabled">Enable/Disable</button>
+				</p>
+
+				<hr>
+				<!-- Single button with keyboard nav -->
+				<div class="btn-group" dropdown keyboardNav="true">
+					<button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" dropdownToggle>
+						Dropdown with keyboard navigation <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="simple-btn-keyboard-nav">
+						<li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+						<li class="divider dropdown-divider"></li>
+						<li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6" style="margin-top: 10px;">
+		<div class="card card-block">
+			<h4 class="card-title">Default</h4>
+			<pagination [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)"></pagination>
+			<pagination [boundaryLinks]="true" [totalItems]="totalItems" [(ngModel)]="currentPage" class="pagination-sm"
+			previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+			<pagination [directionLinks]="false" [boundaryLinks]="true" [totalItems]="totalItems"
+			[(ngModel)]="currentPage"></pagination>
+			<pagination [directionLinks]="false" [totalItems]="totalItems" [(ngModel)]="currentPage"
+			(numPages)="smallnumPages = $event"></pagination>
+			<pre class="card card-block card-header">The selected page no: {{currentPage}}/{{smallnumPages}}</pre>
+			<button type="button" class="btn btn-info" (click)="setPage(3)">Set current page to: 3</button>
+		</div>
+	</div>
+	<div class="col-lg-6" style="margin-top: 10px;">
+		<div class="card card-block">
+			<h4 class="card-title">Pager</h4>
+			<hr/>
+			<h4>Limit the maximum visible buttons</h4>
+			<pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm"
+			[boundaryLinks]="true"></pagination>
+			<pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm"
+			[boundaryLinks]="true" [rotate]="false" (numPages)="numPages = $event"></pagination>
+			<pre class="card card-block card-header">Page: {{bigCurrentPage}} / {{numPages}}</pre>
+		</div>
+	</div>
+</div>
+<div class="card card-block">
+	<div class="row">
+		<div class="cal-lg-12">
+			<div class="card-block">
+				<h5>In bootstrap 4 progress has a different concept, no inner text, no default transition animation</h5>
+				<h4>Static</h4>
+				<div class="row">
+					<div class="col-sm-4">
+						<progress class="progress" value="55" max="100"></progress>
+					</div>
+					<div class="col-sm-4">
+						<progress class="progress progress-striped" value="22" max="100" type="warning">22%</progress>
+					</div>
+					<div class="col-sm-4">
+						<progress class="progress progress-striped active" max="200" value="166" type="danger"><i>166 / 200</i></progress>
+					</div>
+				</div>
+
+				<h4>Dynamic <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button></h4>
+				<progress class="progress progress-striped progress-animated" [max]="max" [value]="dynamic">
+					<span style="color:white; white-space:nowrap;">{{dynamic}} / {{max}}</span>
+				</progress>
+
+				<small><em>No animation</em></small>
+				<progress class="progress progress-success" [value]="dynamic" [max]="100"><b>{{dynamic}}%</b></progress>
+
+				<small><em>Object (changes type based on value)</em></small>
+				<progress class="progress progress-striped progress-animated active progress-{{ type }}" [value]="dynamic" [max]="max">
+					{{type}} <i *ngIf="showWarning">!!! Watch out !!!</i>
+				</progress>
+
+				<hr />
+				<h4>Stacked <button type="button" class="btn btn-sm btn-primary" (click)="randomStacked()">Randomize</button></h4>
+				<div class="row col-lg-12">
+					<!-- todo: implement as component -->
+					<progress *ngFor="let baz of stacked"
+					class="progress progress-{{ baz?.type }}"
+					style="float: left;"
+					[ngStyle]="{width: baz.value + '%'}"
+					[value]="baz.value" [max]="baz.max">
+					<span *ngIf="baz.value > 3">{{baz?.value}}%</span>
+				</progress>
+				<!-- gray background -->
+				<progress class="progress" value="0" max="100" style="width: 100%;"></progress>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<div class="card card-block">
+			<h4 class="card-title">Default</h4>
+			<rating [(ngModel)]="rate" [max]="maxRating" [readonly]="isReadonly"
+			(onHover)="hoveringOver($event)" (onLeave)="resetStar($event)"
+			[titles]="['one','two','three']"></rating>
+			<span class="label"
+			[ngClass]="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
+			[ngStyle]="{display: (overStar && !isReadonly) ? 'inline' : 'none'}">{{percent}}%</span>
+
+			<pre class="card card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
+
+			<button type="button" class="btn btn-sm btn-danger" (click)="rate = 0"
+				[disabled]="isReadonly">Clear
+			</button>
+			<button type="button" class="btn btn-sm btn-primary"
+				(click)="isReadonly = ! isReadonly">Toggle Readonly
+			</button>
+			<hr/>
+
+			<h4>Custom icons</h4>
+			<div>
+				<rating [(ngModel)]="x" max="15" stateOn="glyphicon-ok-sign"
+				stateOff="glyphicon-ok-circle"></rating>
+				<b>(<i>Rate:</i> {{x}})</b>
+			</div>
+			<div>
+				<rating [(ngModel)]="y" [ratingStates]="ratingStates"></rating>
+				<b>(<i>Rate:</i> {{y}})</b>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-6">
+		<div class="card card-block" (click)="$event.preventDefault()">
+			<p>Select a tab by setting active binding to true:</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-sm" (click)="tabs[0].active = true">Select second tab</button>
+				<button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].active = true">Select third tab</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
+			</p>
+			<hr />
+			<tabset>
+				<tab heading="Static title">Static content</tab>
+				<tab *ngFor="let tabz of tabs"
+				[heading]="tabz.title"
+				[active]="tabz.active"
+				(select)="tabz.active = true"
+				(deselect)="tabz.active = false"
+				[disabled]="tabz.disabled"
+				[removable]="tabz.removable"
+				(removed)="removeTabHandler(tabz)">
+				{{tabz?.content}}
+				</tab>
+				<tab (select)="alertMe()">
+					<template tabHeading>
+						<i class="glyphicon glyphicon-bell"></i> Alert!
+					</template>
+					I've got an HTML heading, and a select callback. Pretty cool!
+				</tab>
+			</tabset>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<div class="card card-block">
+			<tabset [vertical]="true" type="pills">
+				<tab heading="Vertical 1">Vertical content 1</tab>
+				<tab heading="Vertical 2">Vertical content 2</tab>
+			</tabset>
+			<hr />
+			<p><i>Bootstrap 4 doesn't have justified classes</i></p>
+			<tabset [justified]="true">
+				<tab heading="Justified">Justified content</tab>
+				<tab heading="SJ">Short Labeled Justified content</tab>
+				<tab heading="Long Justified">Long Labeled Justified content</tab>
+			</tabset>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card card-block">
+			<div class="card-title">Tooltip</div>
+			<a href="#" class="btn btn-danger" tooltipPlacement="top" tooltip="On the top!">On Top</a>
+			<a href="#" class="btn btn-warning" tooltipPlacement="bottom" tooltip="On the bottom!">On Bottom</a>
+			<a href="#" class="btn btn-success" tooltipPlacement="left" tooltip="On the left!">On Left</a>
+			<a href="#" class="btn btn-info" tooltipPlacement="right" tooltip="On the right!">On Right</a>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-12">
+		<div class="card card-block">
+		    <h4>Static arrays</h4>
+		    <pre class="card card-block card-header">Model: {{selected | json}}</pre>
+		    <input [(ngModel)]="selected"
+		           [typeahead]="statesComplex"
+		           (typeaheadOnSelect)="typeaheadOnSelect($event)"
+		           [typeaheadOptionField]="'name'"
+		           class="form-control">
+
+		    <h4>Asynchronous results</h4>
+		    <pre class="card card-block card-header">Model: {{asyncSelected | json}}</pre>
+		    <input [(ngModel)]="asyncSelected"
+		           [typeahead]="getAsyncData(getContext())"
+		           (typeaheadLoading)="changeTypeaheadLoading($event)"
+		           (typeaheadNoResults)="changeTypeaheadNoResults($event)"
+		           (typeaheadOnSelect)="typeaheadOnSelect($event)"
+		           [typeaheadOptionsLimit]="7"
+		           placeholder="Locations loaded with timeout"
+		           class="form-control">
+		    <div *ngIf="typeaheadLoading===true">
+		        <i class="glyphicon glyphicon-refresh ng-hide" style=""></i>
+		    </div>
+		    <div *ngIf="typeaheadNoResults===true" class="" style="">
+		        <i class="glyphicon glyphicon-remove"></i> No Results Found
+		    </div>
+		</div>
+	</div>
+</div>
