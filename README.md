@@ -28,8 +28,8 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 In order to start the seed use:
 
 ```bash
-git clone --depth 1 https://github.com/mgechev/angular2-seed.git
-cd angular2-seed
+git clone https://github.com/start-angular/SB-Admin-BS4-Angular-2.git
+cd SB-Admin-BS4-Angular-2
 # install the project's dependencies
 npm install
 # watches your files and uses livereload by default
