@@ -33,7 +33,7 @@
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "Nitin Kumar Mishra",
   "license": "MIT",
   "devDependencies": {
     "@angular/compiler-cli": "0.6.1",
