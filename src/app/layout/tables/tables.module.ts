@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { TablesRoutingModule } from './tables-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    TablesRoutingModule
-  ],
-  declarations: []
+    imports: [
+        CommonModule,
+        TablesRoutingModule
+    ],
+    declarations: []
 })
 export class TablesModule { }

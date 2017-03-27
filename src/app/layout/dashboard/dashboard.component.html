@@ -1,3 +1,30 @@
-<p>
-  dashboard works!
-</p>
+<ngb-carousel>
+    <template ngbSlide>
+    <img class="img-fluid mx-auto d-block" src="http://lorempixel.com/900/500?r=1" alt="Random first slide">
+        <div class="carousel-caption">
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+    </template>
+    <template ngbSlide>
+    <img class="img-fluid mx-auto d-block" src="http://lorempixel.com/900/500?r=2" alt="Random second slide">
+        <div class="carousel-caption">
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </template>
+    <template ngbSlide>
+    <img class="img-fluid mx-auto d-block" src="http://lorempixel.com/900/500?r=3" alt="Random third slide">
+        <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </template>
+</ngb-carousel>
+<app-chat></app-chat>
+<app-notification></app-notification>
+<app-timeline></app-timeline>
+<app-stat [bgClass]="'card-primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'"></app-stat>
+<app-stat [bgClass]="'card-info'" [icon]="'fa-tasks'" [count]="12" [label]="'New task!'"></app-stat>
+<app-stat [bgClass]="'card-success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'"></app-stat>
+<app-stat [bgClass]="'card-danger'" [icon]="'fa-support'" [count]="13" [label]="'Support Tickets!'"></app-stat>

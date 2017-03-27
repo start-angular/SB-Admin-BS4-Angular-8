@@ -88,3 +88,27 @@ $topnav-background-color: #222;
         }
     }
 }
+.nested-menu {
+    .list-group-item {
+        cursor: pointer;
+    }
+    .nested {
+        list-style-type: none;
+    }
+    ul.submenu {
+        height: 0;
+    }
+    & .expand {
+        ul.submenu {
+            list-style-type: none;
+            height: auto;
+            li {
+                a {
+                    color: #FFF;
+                    padding: 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
