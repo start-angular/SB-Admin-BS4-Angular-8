@@ -17,7 +17,7 @@ import { StatModule } from '../../shared';
         CommonModule,
         NgbModule.forRoot(),
         DashboardRoutingModule,
-        StatModule
+        StatModule,
     ],
     declarations: [
         DashboardComponent,
