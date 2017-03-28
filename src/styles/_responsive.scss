@@ -1,0 +1,18 @@
+@media screen and (max-width: 992px) {
+    .sidebar {
+        top: 54px !important;
+        left: 0px !important;
+    }
+    .main-container {
+        margin-left: 0px !important;
+    }
+    .push-right {
+        .sidebar{
+            left: 235px !important;
+        }
+        .main-container {
+            margin-left: 235px;
+            left: 235px;
+        }
+    }
+}

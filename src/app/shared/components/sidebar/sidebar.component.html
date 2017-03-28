@@ -1,6 +1,3 @@
-<!-- <button class="btn btn-default" id="toggle-sidebar" type="button" (click)="eventCalled()">
-    &#9776;
-</button> -->
 <nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
     <ul class="list-group">
         <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
@@ -31,10 +28,10 @@
             <li class="nested" [class.expand]="showMenu === 'pages'">
                 <ul class="submenu">
                     <li>
-                        <a href><span>Submenu</span></a>
+                        <a href="javascript:void(0)"><span>Submenu</span></a>
                     </li>
                     <li>
-                        <a href><span>Submenu</span></a>
+                        <a href="javascript:void(0)"><span>Submenu</span></a>
                     </li>
                 </ul>
             </li>
