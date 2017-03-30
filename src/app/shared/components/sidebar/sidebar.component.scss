@@ -2,7 +2,7 @@ $topnav-background-color: #222;
 .sidebar{
     border-radius: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 1000;
     top: 56px;
     left: 235px;
     width: 235px;
@@ -14,11 +14,11 @@ $topnav-background-color: #222;
     bottom: 0;
     overflow-x: hidden;
     padding-bottom: 40px;
-    // -webkit-transition: all 0.2s ease-in-out;
-    //    -moz-transition: all 0.2s ease-in-out;
-    //     -ms-transition: all 0.2s ease-in-out;
-    //      -o-transition: all 0.2s ease-in-out;
-    //         transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
     border-top: 1px solid rgba(255,255,255,0.3);
     .list-group{
         a.list-group-item{
@@ -111,5 +111,11 @@ $topnav-background-color: #222;
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 992px) {
+    .sidebar {
+        top: 54px;
+        left: 0px;
     }
 }
