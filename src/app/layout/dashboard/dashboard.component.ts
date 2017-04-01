@@ -33,7 +33,7 @@ export class DashboardComponent implements OnInit {
                 voluptatum veritatis quod aliquam! Rerum placeat necessitatibus, vitae dolorum`,
         }, {
             id: 2,
-            type: 'danger',
+            type: 'warning',
             message: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptates est animi quibusdam praesentium quam, et perspiciatis,
                 consectetur velit culpa molestias dignissimos

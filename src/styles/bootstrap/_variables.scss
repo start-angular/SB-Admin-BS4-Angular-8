@@ -232,7 +232,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:               12 !default;
-$grid-gutter-width-base:     30px !default;
+$grid-gutter-width-base:     15px !default;
 $grid-gutter-widths: (
   xs: $grid-gutter-width-base,
   sm: $grid-gutter-width-base,
@@ -688,21 +688,21 @@ $jumbotron-bg:                   $gray-lighter !default;
 //
 // Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             #FFFFFF !default;
+$state-success-bg:               $brand-success !default;
 $state-success-border:           darken($state-success-bg, 5%) !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
+$state-info-text:                #FFFFFF !default;
+$state-info-bg:                  $brand-info !default;
 $state-info-border:              darken($state-info-bg, 7%) !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
+$state-warning-text:             #FFFFFF !default;
+$state-warning-bg:               $brand-warning !default;
 $mark-bg:                        $state-warning-bg !default;
 $state-warning-border:           darken($state-warning-bg, 5%) !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
+$state-danger-text:              #FFFFFF !default;
+$state-danger-bg:                $brand-danger !default;
 $state-danger-border:            darken($state-danger-bg, 5%) !default;
 
 

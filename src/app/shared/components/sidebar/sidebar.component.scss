@@ -3,7 +3,7 @@ $topnav-background-color: #222;
     border-radius: 0;
     position: fixed;
     z-index: 1000;
-    top: 56px;
+    top: 55px;
     left: 235px;
     width: 235px;
     margin-left: -235px;
@@ -19,7 +19,7 @@ $topnav-background-color: #222;
         -ms-transition: all 0.2s ease-in-out;
          -o-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
-    border-top: 1px solid rgba(255,255,255,0.3);
+    // border-top: 1px solid rgba(255,255,255,0.3);
     .list-group{
         a.list-group-item{
             background: $topnav-background-color;

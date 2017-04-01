@@ -1,6 +1,6 @@
 {
-  "name": "sb-admin-angular2-bootstrap4",
-  "version": "0.0.0",
+  "name": "sb-admin-angular4-bootstrap4",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
