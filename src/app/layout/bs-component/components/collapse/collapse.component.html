@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card mb-3">
+            <div class="card-header">Collapse</div>
+            <div class="card-block">
+                <p>
+                    <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+                        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                        Toggle
+                    </button>
+                </p>
+                <div id="collapseExample" [ngbCollapse]="isCollapsed">
+                    <div class="card">
+                        <div class="card-block">
+                            You can collapse this card by clicking Toggle
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

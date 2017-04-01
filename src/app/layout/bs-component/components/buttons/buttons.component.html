@@ -1,0 +1,50 @@
+<div class="row mb-3">
+    <div class="col col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                Radio Button group (<strong>Using ngModel</strong>)
+            </div>
+            <div class="card-block">
+                <div [(ngModel)]="model" ngbRadioGroup name="radioBasic">
+                    <label class="btn btn-primary">
+                        <input type="radio" [value]="1"> Left (pre-checked)
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" value="middle"> Middle
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" [value]="false"> Right
+                    </label>
+                </div>
+                <div class="alert alert-info mb-0">
+                    <strong>Selected Value: </strong>{{model}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                Radio Button group (<strong>Ractive Forms</strong>)
+            </div>
+            <div class="card-block">
+                <form [formGroup]="radioGroupForm">
+                    <div ngbRadioGroup name="radioBasic" formControlName="model">
+                        <label class="btn btn-primary">
+                            <input type="radio" [value]="1"> Left (pre-checked)
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" value="middle"> Middle
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" [value]="false"> Right
+                        </label>
+                    </div>
+                    <div class="alert alert-info mb-0">
+                        <strong>Selected Value: </strong>{{radioGroupForm.value.model}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

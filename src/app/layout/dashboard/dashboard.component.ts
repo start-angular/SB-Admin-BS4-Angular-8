@@ -7,13 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
     public alerts: Array<any> = [];
-    imgUrl: Array<any> = [
-        `assets/img/slider1.jpg`,
-        `assets/img/slider2.jpg`,
-        `assets/img/slider3.jpg`,
-        `assets/img/slider0.jpg`
-    ];
+    public sliders: Array<any> = [];
+
     constructor() {
+        this.sliders.push({
+            imagePath: 'assets/images/slider1.jpg',
+            label: 'First slide label',
+            text: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+        }, {
+            imagePath: 'assets/images/slider2.jpg',
+            label: 'Second slide label',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        }, {
+            imagePath: 'assets/images/slider3.jpg',
+            label: 'Third slide label',
+            text: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+        });
+
         this.alerts.push({
             id: 1,
             type: 'success',

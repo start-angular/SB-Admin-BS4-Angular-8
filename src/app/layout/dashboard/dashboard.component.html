@@ -3,25 +3,11 @@
     <div class="row">
         <div class="col-md-12">
             <ngb-carousel>
-                <template ngbSlide>
-                    <img class="img-fluid mx-auto d-block" src="assets/images/slider1.jpg" alt="Random first slide" width="100%">
+                <template ngbSlide *ngFor="let slider of sliders">
+                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
                     <div class="carousel-caption">
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </div>
-                </template>
-                <template ngbSlide>
-                    <img class="img-fluid mx-auto d-block" src="assets/images/slider2.jpg" alt="Random second slide" width="100%">
-                    <div class="carousel-caption">
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                </template>
-                <template ngbSlide>
-                    <img class="img-fluid mx-auto d-block" src="assets/images/slider3.jpg" alt="Random third slide" width="100%">
-                    <div class="carousel-caption">
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>{{slider.label}}</h3>
+                        <p>{{slider.text}}</p>
                     </div>
                 </template>
             </ngb-carousel>
@@ -39,7 +25,7 @@
             <app-stat [bgClass]="'card-success'" [icon]="'fa-shopping-cart'" [count]="124" [label]="'New Orders!'" ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'card-danger'" [icon]="'fa-support'" [count]="13" [label]="'Support Tickets!'"></app-stat>
+            <app-stat [bgClass]="'card-danger'" [icon]="'fa-support'" [count]="13" [label]="'New Tickets!'"></app-stat>
         </div>
     </div>
     <hr />
