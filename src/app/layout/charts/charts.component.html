@@ -1,18 +1,4 @@
-<!-- Page Heading -->
-<div class="row">
-    <div class="col-xl-12">
-        <h2 class="page-header">
-            Charts
-        </h2>
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-                <i class="fa fa-dashboard"></i> <a href="Javascript:void(0)" [routerLink]="['/dashboard']">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active"><i class="fa fa-bar-chart-o"></i> Charts</li>
-        </ol>
-    </div>
-</div>
-<!-- /.row -->
+<app-page-header [heading]="'Charts'" [icon]="'fa-bar-chart-o'"></app-page-header>
 <div class="row">
     <div class="col col-sm-6">
         <div class="card mb-3">
@@ -20,14 +6,7 @@
                 Bar Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    [datasets]="barChartData"
-                    [labels]="barChartLabels"
-                    [options]="barChartOptions"
-                    [legend]="barChartLegend"
-                    [chartType]="barChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
             <div class="card-footer">
@@ -41,13 +20,7 @@
                 Doughnut Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    height="180px"
-                    [data]="doughnutChartData"
-                    [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart height="180px" [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
         </div>
@@ -60,13 +33,7 @@
                 Radar Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    height="150px"
-                    [datasets]="radarChartData"
-                    [labels]="radarChartLabels"
-                    [chartType]="radarChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart height="150px" [datasets]="radarChartData" [labels]="radarChartLabels" [chartType]="radarChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
         </div>
@@ -77,13 +44,7 @@
                 Pie Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    height="150px"
-                    [data]="pieChartData"
-                    [labels]="pieChartLabels"
-                    [chartType]="pieChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart height="150px" [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
         </div>
@@ -96,14 +57,7 @@
                 Polar Area Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    height="130px"
-                    [data]="polarAreaChartData"
-                    [labels]="polarAreaChartLabels"
-                    [legend]="polarAreaLegend"
-                    [chartType]="polarAreaChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart height="130px" [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend" [chartType]="polarAreaChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
         </div>
@@ -114,16 +68,7 @@
                 Line Chart
             </div>
             <div class="card-block">
-                <canvas baseChart
-                    height="130"
-                    [datasets]="lineChartData"
-                    [labels]="lineChartLabels"
-                    [options]="lineChartOptions"
-                    [colors]="lineChartColors"
-                    [legend]="lineChartLegend"
-                    [chartType]="lineChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
+                <canvas baseChart height="130" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
                 </canvas>
             </div>
         </div>
