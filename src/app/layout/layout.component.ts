@@ -10,6 +10,7 @@ export class LayoutComponent implements OnInit {
     ngOnInit() {
         if (this.router.url === '/') {
             this.router.navigate(['/dashboard']);
+            console.log('%c this.router => ', 'background: #222; color: #bada55', this.router);
         }
     }
 }

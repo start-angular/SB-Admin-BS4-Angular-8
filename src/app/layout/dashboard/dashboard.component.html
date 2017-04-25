@@ -2,13 +2,13 @@
 <div class="row">
     <div class="col-md-12">
         <ngb-carousel>
-            <template ngbSlide *ngFor="let slider of sliders">
+            <ng-template ngbSlide *ngFor="let slider of sliders">
                 <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
                 <div class="carousel-caption">
                     <h3>{{slider.label}}</h3>
                     <p>{{slider.text}}</p>
                 </div>
-            </template>
+            </ng-template>
         </ngb-carousel>
     </div>
 </div>

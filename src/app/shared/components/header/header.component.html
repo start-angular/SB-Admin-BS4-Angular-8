@@ -67,7 +67,7 @@
                         <a class="dropdown-item" href="jvascript:void(0)"><i class="fa fa-fw fa-user"></i> Profile</a>
                         <a class="dropdown-item" href="jvascript:void(0)"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
                         <a class="dropdown-item" href="jvascript:void(0)"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                        <a class="dropdown-item" [routerLink]="['/login']"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        <a class="dropdown-item" [routerLink]="['/login']" (click)="onLoggedout()"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
                     </div>
                 </div>
             </ul>

@@ -13,7 +13,7 @@
                         <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']"> Log in </a>
+                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
                 &nbsp;
                 <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
             </form>
