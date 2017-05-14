@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { CollapseComponent } from './collapse.component';
 
@@ -8,6 +9,7 @@ describe('CollapseComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ NgbModule.forRoot() ],
       declarations: [ CollapseComponent ]
     })
     .compileComponents();

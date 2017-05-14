@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { DropdownComponent } from './dropdown.component';
 
@@ -8,6 +9,9 @@ describe('DropdownComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        NgbModule.forRoot()
+      ],
       declarations: [ DropdownComponent ]
     })
     .compileComponents();
