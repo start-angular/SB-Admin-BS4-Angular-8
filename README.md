@@ -19,7 +19,6 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 - Ahead-of-Time compilation support.
 - Official Angular i18n support.
 - Production and development builds.
-- Ahead-of-Time compilation support.
 - Tree-Shaking production builds.
 
 ### How to start
