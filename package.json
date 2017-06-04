@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve --ec=true",
     "build": "ng build --prod",
+    "gitbuild": "ng build --prod --base='/start-angular/SB-Admin-BS4-Angular-4/master/dist'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

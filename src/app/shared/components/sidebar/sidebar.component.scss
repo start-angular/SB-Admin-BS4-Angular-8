@@ -21,68 +21,71 @@ $topnav-background-color: #222;
             transition: all 0.2s ease-in-out;
     // border-top: 1px solid rgba(255,255,255,0.3);
     .list-group{
-        a.list-group-item{
+        a.list-group-item {
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
             color: #999;
             text-decoration: none;
+            .fa {
+                margin-right: 10px;
+            }
         }
-        a:hover{
+        a:hover {
             background: darken($topnav-background-color, 5%);
             color: #fff;
         }
-        a.router-link-active{
+        a.router-link-active {
             background: darken($topnav-background-color, 5%);
             color: #fff;
         }
     }
-    .sidebar-dropdown{
-        *:focus{
+    .sidebar-dropdown {
+        *:focus {
             border-radius: none;
             border:none;
         }
-        .panel-title{
+        .panel-title {
             font-size : 1rem;
             height : 50px;
             margin-bottom:0;
-            a{
+            a {
                 color : #999;
                 text-decoration : none;
                 font-weight:400;
                 background:$topnav-background-color;
-                span{
+                span {
                     position: relative;
                     display: block;
                     padding: .75rem 1.5rem;
                     padding-top:1rem;
                 }
             }
-            a:hover,a:focus{
+            a:hover,a:focus {
                 color: #fff;
                 outline: none;
                 outline-offset: -2px;
             }
         }
-        .panel-title:hover{
+        .panel-title:hover {
             background: darken($topnav-background-color, 5%);
         }
-        .panel-collapse{
+        .panel-collapse {
             border-radious :0;
             border : none;
-            .panel-body{
-                .list-group-item{
+            .panel-body {
+                .list-group-item {
                     border-radius : 0;
                     background-color: $topnav-background-color;
                     border: 0 solid transparent;
-                    a{
+                    a {
                         color:#999;
                     }
-                    a:hover{
+                    a:hover {
                         color:#FFF;
                     }
                 }
-                .list-group-item:hover{
+                .list-group-item:hover {
                     background : darken($topnav-background-color, 5%);
                 }
             }
