@@ -13,7 +13,7 @@ import { AuthGuard } from './shared';
 export function HttpLoaderFactory(http: Http) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
     /** for github demo */
-    // new TranslateHttpLoader(http, '/start-angular/SB-Admin-BS4-Angular-4/master/dist/assets/i18n/', '.json?v=1');
+    // new TranslateHttpLoader(http, '/start-angular/SB-Admin-BS4-Angular-4/master/dist/assets/i18n/', '.json');
 }
 
 @NgModule({
