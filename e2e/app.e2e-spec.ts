@@ -7,8 +7,8 @@ describe('cli-stable App', () => {
     page = new CliStablePage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message SB Admin BS4 Angular4', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('SB Admin BS4 Angular4');
   });
 });
