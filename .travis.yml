@@ -17,3 +17,4 @@ before_script:
 
 script:
   - npm run test
+  - npm run e2e
