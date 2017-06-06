@@ -17,6 +17,3 @@ before_script:
 
 script:
   - npm run test
-
-deploy:
-  - echo "deploy"
