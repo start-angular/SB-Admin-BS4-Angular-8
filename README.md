@@ -10,6 +10,8 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+[![Build Status](https://api.travis-ci.org/start-angular/SB-Admin-BS4-Angular-4.svg?branch=master)](https://travis-ci.org/start-angular/SB-Admin-BS4-Angular-4)
+
 ### Introduction
 Provides fast, reliable and extensible starter for the development of Angular projects.
 
