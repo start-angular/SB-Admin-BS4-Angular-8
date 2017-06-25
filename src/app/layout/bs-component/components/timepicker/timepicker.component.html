@@ -1,0 +1,68 @@
+<div class="row mt-3">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">Timepicker (<b>Default</b>)</div>
+            <div class="card-block">
+                <ngb-timepicker [(ngModel)]="defaultTime"></ngb-timepicker>
+                <div class="alert alert-info">
+                    <b>Selected time: </b>{{defaultTime | json}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">Timepicker (<b>Default</b>)</div>
+            <div class="card-block">
+                <ngb-timepicker [(ngModel)]="meridianTime" [meridian]="meridian"></ngb-timepicker>
+                <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
+                    Meridian - {{meridian ? "ON" : "OFF"}}
+                </button>
+                <div class="alert alert-info mt-3 mb-0">
+                    <b>Selected time: </b>{{meridianTime | json}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">Timepicker (<b>Seconds</b>)</div>
+            <div class="card-block">
+                <ngb-timepicker [(ngModel)]="SecondsTime" [seconds]="seconds"></ngb-timepicker>
+                <button class="btn btn-sm btn-outline-{{seconds ? 'success' : 'danger'}}" (click)="toggleSeconds()">
+                    Seconds - {{seconds ? "ON" : "OFF"}}
+                </button>
+                <div class="alert alert-info mt-3 mb-0">
+                    <b>Selected time: </b>{{SecondsTime | json}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 mt-3">
+        <div class="card">
+            <div class="card-header">Timepicker (<b>Custom Step</b>)</div>
+            <div class="card-block">
+                <ngb-timepicker [(ngModel)]="customTime" [seconds]="true"
+                [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep"></ngb-timepicker>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label for="changeHourStep">Hour Step</label>
+                        <input type="number" class="form-control" [(ngModel)]="hourStep" />
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="changeMinuteStep">Minute Step</label>
+                        <input type="number" class="form-control" [(ngModel)]="minuteStep" />
+                    </div>
+                    <div class="col-sm-4">
+                        <label for="changeSecondStep">Second Step</label>
+                        <input type="number" class="form-control" [(ngModel)]="secondStep" />
+                    </div>
+                </div>
+                <div class="alert alert-info mt-3 mb-0">
+                    <b>Selected time: </b>{{customTime | json}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive}">
+    <ul class="list-group">
+        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'dashboard' | translate }}
+        </a>
+        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'charts' | translate }}
+        </a>
+        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'tables' | translate }}
+        </a>
+        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'forms' | translate }}
+        </a>
+        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-desktop"></i>&nbsp;{{ 'boostrapElement' | translate }}
+        </a>
+        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-wrench"></i>&nbsp;{{ 'boostrapGrid' | translate }}
+        </a>
+        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-th-list"></i>&nbsp;{{ 'component' | translate }}
+        </a>
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('pages')">
+                <span><i class="fa fa-plus"></i>&nbsp;{{ 'menu' | translate }}</span>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'pages'">
+                <ul class="submenu">
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <a [routerLink]="['/blank-page']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-file-o"></i>&nbsp;{{ 'blankpage' | translate }}
+        </a>
+        <a class="list-group-item more-themes" href="http://www.strapui.com/" >
+            {{ 'moretheme' | translate }}
+        </a>
+    </ul>
+</nav>

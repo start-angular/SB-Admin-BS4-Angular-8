@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card mb-3">
+            <div class="card-header">Modal</div>
+            <!-- Large modal -->
+            <div class="card-block">
+                <button class="btn btn-primary" (click)="open(content)">Large modal</button>
+                <ng-template #content let-c="close" let-d="dismiss">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal title</h4>
+                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                    </div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

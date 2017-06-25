@@ -1,0 +1,35 @@
+.rtl {
+    .sidebar {
+        left: auto !important;
+        right: 0 !important;
+        > ul.list-group {
+            padding: 0;
+        }
+    }
+    .main-container {
+        margin-left: 0 !important;
+        margin-right: 235px;
+    }
+    * {
+        direction: rtl;
+    }
+}
+@media screen and (max-width: 992px) {
+    .rtl {
+        .navbar-brand {
+            direction: ltr;
+        }
+        .sidebar {
+            right: -235px !important;
+        }
+        .main-container {
+            margin-right: 0;
+        }
+        &.push-right {
+            .sidebar {
+                left: auto !important;
+                right: 0 !important;
+            }
+        }
+    }
+}

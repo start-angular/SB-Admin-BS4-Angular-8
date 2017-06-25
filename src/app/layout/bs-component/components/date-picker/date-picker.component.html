@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card mb-3">
+            <div class="card-header">Date Picker</div>
+            <div class="card-block">
+                <form class="form-inline mb-3">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd"
+                                name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+                            <div class="input-group-addon" (click)="d.toggle()" >
+                                <span class="fa fa-calendar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="alert alert-info mb-0">
+                    <strong>Model: </strong> {{ model | json }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

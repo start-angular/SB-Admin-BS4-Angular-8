@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card mb-3">
+            <div class="card-header">Buttons</div>
+            <div class="card-block">
+                <p *ngFor="let alert of alerts">
+                    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

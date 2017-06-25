@@ -1,0 +1,86 @@
+<div class="pos-f-t fixed-top header">
+    <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md">
+        <button class="navbar-toggler navbar-toggler-right" (click)="toggleSidebar()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="javascript:void(0)">SB Admin BS 4 Angular4</a>
+        <div class="collapse navbar-collapse">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            </form>
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                <li class="nav-item hidden-lg-down">
+                    <a href="https://github.com/start-angular/SB-Admin-BS4-Angular-2/archive/master.zip" class="nav-link btn mt-1" role="button" style="padding: .375rem 1rem !important; border-color: #999;">{{ 'downloadNow' | translate }}</a>
+                </li> &nbsp;
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link mt-1" style="padding: 0.375rem 1rem !important; border-color: #999;" (click)="rltAndLtr()">RTL/LTR</a>
+                </li> &nbsp;
+                <li class="nav-item dropdown" ngbDropdown>
+                    <!-- <div class="dropdown"> -->
+                    <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
+                        <i class="fa fa-envelope"></i> <b class="caret"></b><span class="sr-only">(current)</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right messages">
+                        <li class="media">
+                            <img class="d-flex align-self-center mr-3" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">John Smith</h5>
+                                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="d-flex align-self-center mr-3" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">John Smith</h5>
+                                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="d-flex align-self-center mr-3" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">John Smith</h5>
+                                <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                        <i class="fa fa-bell"></i> <b class="caret"></b><span class="sr-only">(current)</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <a href="javascript:void(0)" class="dropdown-item">Pending Task <span class="badge badge-info">6</span></a>
+                        <a href="javascript:void(0)" class="dropdown-item">In queue <span class="badge badge-info"> 13</span></a>
+                        <a href="javascript:void(0)" class="dropdown-item">Mail <span class="badge badge-info"> 45</span></a>
+                        <li class="dropdown-divider"></li>
+                        <a href="javascript:void(0)" class="dropdown-item">View All</a>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                        <i class="fa fa-language"></i> {{ 'language' | translate }} <b class="caret"></b>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">English</a>
+                        <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fr')">French</a>
+                        <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('ur')">Urdu</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                        <i class="fa fa-user"></i> John Smith <b class="caret"></b>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        <a class="dropdown-item" [routerLink]="['/login']" (click)="onLoggedout()"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
