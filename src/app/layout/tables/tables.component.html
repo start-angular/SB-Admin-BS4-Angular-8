@@ -1,21 +1,22 @@
-<app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
-<div class="row">
-    <div class="col col-xl-6 col-lg-12">
-        <div class="card mb-3">
-            <div class="card-header">
-                Basic example
-            </div>
-            <div class="card-block table-responsive">
-                <table class="table">
-                    <thead>
+<div [@routerTransition]>
+    <app-page-header [heading]="'Tables'" [icon]="'fa-table'"></app-page-header>
+    <div class="row">
+        <div class="col col-xl-6 col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">
+                    Basic example
+                </div>
+                <div class="card-block table-responsive">
+                    <table class="table">
+                        <thead>
                         <tr>
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
@@ -34,23 +35,23 @@
                             <td>the Bird</td>
                             <td>@twitter</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Table head options</div>
-            <div class="card-block table-responsive">
-                <table class="table">
-                    <thead class="thead-inverse">
+            <div class="card mb-3">
+                <div class="card-header">Table head options</div>
+                <div class="card-block table-responsive">
+                    <table class="table">
+                        <thead class="thead-inverse">
                         <tr>
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
@@ -69,18 +70,18 @@
                             <td>the Bird</td>
                             <td>@twitter</td>
                         </tr>
-                    </tbody>
-                </table>
-                <table class="table">
-                    <thead class="thead-default">
+                        </tbody>
+                    </table>
+                    <table class="table">
+                        <thead class="thead-default">
                         <tr>
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
@@ -99,23 +100,23 @@
                             <td>the Bird</td>
                             <td>@twitter</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Bordered table</div>
-            <div class="card-block table-responsive">
-                <table class="table table-bordered">
-                    <thead>
+            <div class="card mb-3">
+                <div class="card-header">Bordered table</div>
+                <div class="card-block table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
                         <tr>
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
@@ -139,22 +140,22 @@
                             <td colspan="2">Larry the Bird</td>
                             <td>@twitter</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Small table</div>
-            <table class="table table-sm">
-                <thead>
+            <div class="card mb-3">
+                <div class="card-header">Small table</div>
+                <table class="table table-sm">
+                    <thead>
                     <tr>
                         <th>#</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
@@ -172,24 +173,24 @@
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <div class="col col-xl-6 col-lg-12">
-        <div class="card mb-3">
-            <div class="card-header">Inverse table</div>
-            <div class="card-block table-responsive">
-                <table class="table table-inverse">
-                    <thead>
+        <div class="col col-xl-6 col-lg-12">
+            <div class="card mb-3">
+                <div class="card-header">Inverse table</div>
+                <div class="card-block table-responsive">
+                    <table class="table table-inverse">
+                        <thead>
                         <tr>
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
                             <th>Username</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <th scope="row">1</th>
                             <td>Mark</td>
@@ -208,23 +209,23 @@
                             <td>the Bird</td>
                             <td>@twitter</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Striped Rows</div>
-            <div class="card-block table-responsive">
-                <table class="table table-hover table-striped">
-                    <thead>
+            <div class="card mb-3">
+                <div class="card-header">Striped Rows</div>
+                <div class="card-block table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead>
                         <tr>
                             <th>Page</th>
                             <th>Visits</th>
                             <th>% New Visits</th>
                             <th>Revenue</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
                         <tr>
                             <td>/index.html</td>
                             <td>1265</td>
@@ -267,22 +268,22 @@
                             <td>93.2%</td>
                             <td>$126.34</td>
                         </tr>
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Hoverable rows</div>
-            <table class="card-block table table-hover">
-                <thead>
+            <div class="card mb-3">
+                <div class="card-header">Hoverable rows</div>
+                <table class="card-block table table-hover">
+                    <thead>
                     <tr>
                         <th>#</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
@@ -300,21 +301,21 @@
                         <td colspan="2">Larry the Bird</td>
                         <td>@twitter</td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="card mb-3">
-            <div class="card-header">Contextual classes</div>
-            <table class="card-block table">
-                <thead>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header">Contextual classes</div>
+                <table class="card-block table">
+                    <thead>
                     <tr>
                         <th>#</th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr class="table-active">
                         <th scope="row">1</th>
                         <td>Mark</td>
@@ -345,8 +346,9 @@
                         <td>the Bird</td>
                         <td>@twitter</td>
                     </tr>
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
