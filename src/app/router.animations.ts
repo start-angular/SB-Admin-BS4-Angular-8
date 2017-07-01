@@ -1,13 +1,13 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export function routerTransition() {
-    return slideToLeft();
+    return slideToTop();
 }
 
 export function slideToRight() {
     return trigger('routerTransition', [
-        state('void', style({ position: 'fixed', width: '100%' })),
-        state('*', style({ position: 'fixed', width: '100%' })),
+        state('void', style({})),
+        state('*', style({})),
         transition(':enter', [
             style({ transform: 'translateX(-100%)' }),
             animate('0.5s ease-in-out', style({ transform: 'translateX(0%)' }))
@@ -21,8 +21,8 @@ export function slideToRight() {
 
 export function slideToLeft() {
     return trigger('routerTransition', [
-        state('void', style({ position: 'fixed', width: '100%' })),
-        state('*', style({ position: 'fixed', width: '100%' })),
+        state('void', style({})),
+        state('*', style({})),
         transition(':enter', [
             style({ transform: 'translateX(100%)' }),
             animate('0.5s ease-in-out', style({ transform: 'translateX(0%)' }))
@@ -36,8 +36,8 @@ export function slideToLeft() {
 
 export function slideToBottom() {
     return trigger('routerTransition', [
-        state('void', style({ position: 'fixed', width: '100%', height: '100%' })),
-        state('*', style({ position: 'fixed', width: '100%', height: '100%' })),
+        state('void', style({})),
+        state('*', style({})),
         transition(':enter', [
             style({ transform: 'translateY(-100%)' }),
             animate('0.5s ease-in-out', style({ transform: 'translateY(0%)' }))
@@ -51,8 +51,8 @@ export function slideToBottom() {
 
 export function slideToTop() {
     return trigger('routerTransition', [
-        state('void', style({ position: 'fixed', width: '100%', height: '100%' })),
-        state('*', style({ position: 'fixed', width: '100%', height: '100%' })),
+        state('void', style({})),
+        state('*', style({})),
         transition(':enter', [
             style({ transform: 'translateY(100%)' }),
             animate('0.5s ease-in-out', style({ transform: 'translateY(0%)' }))
