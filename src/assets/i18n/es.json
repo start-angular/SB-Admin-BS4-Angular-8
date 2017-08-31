@@ -1,15 +1,15 @@
 {
-    "dashboard": "Principal",
-    "charts": "Caracteres",
-    "tables": "Tablas",
-    "forms": "Formularios",
-    "boostrapElement": "Elementos Boostrap",
-    "boostrapGrid": "Rejilla Boostrap",
-    "component": "Componentes",
-    "menu": "Menú",
-    "submenu": "Submenú",
-    "blankpage": "Página en Blanco",
-    "moretheme": "Más temas",
-    "downloadNow": "Descarga Ahora",
-    "language": "Lenguaje"
+    "Dashboard": "Principal",
+    "Charts": "Caracteres",
+    "Tables": "Tablas",
+    "Forms": "Formularios",
+    "Boostrap Element": "Elementos Boostrap",
+    "Boostrap Grid": "Rejilla Boostrap",
+    "Component": "Componentes",
+    "Menu": "Menú",
+    "Submenu": "Submenú",
+    "Blank Page": "Página en Blanco",
+    "More Theme": "Más temas",
+    "Download Now": "Descarga Ahora",
+    "Language": "Lenguaje"
 }

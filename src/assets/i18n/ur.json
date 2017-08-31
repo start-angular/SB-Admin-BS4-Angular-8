@@ -1,15 +1,15 @@
 {
-    "dashboard": "داشبورد",
-    "charts": "چارت ها",
-    "tables": "جداول",
-    "forms": "فرم ها",
-    "boostrapElement": "عنصر بوتسترپ",
-    "boostrapGrid": "جدول بوتسترپ",
-    "component": "کامپوننت",
-    "menu": "منو",
-    "submenu": "زیر منو",
-    "blankpage": "صفحه خالی",
-    "moretheme": "تم های بیشتر",
-    "downloadNow": "دانلود",
-    "language": "زبان"
+    "Dashboard": "داشبورد",
+    "Charts": "چارت ها",
+    "Tables": "جداول",
+    "Forms": "فرم ها",
+    "Boostrap Element": "عنصر بوتسترپ",
+    "Boostrap Grid": "جدول بوتسترپ",
+    "Component": "کامپوننت",
+    "Menu": "منو",
+    "Submenu": "زیر منو",
+    "Blank Page": "صفحه خالی",
+    "More Theme": "تم های بیشتر",
+    "Download Now": "دانلود",
+    "Language": "زبان"
 }
