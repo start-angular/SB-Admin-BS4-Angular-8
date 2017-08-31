@@ -18,5 +18,9 @@
     "Spanish": "Spanish",
     "Italian": "Italien",
     "Farsi": "Farsi",
-    "Search" : "Chercher"
+    "Search" : "Chercher",
+    "Settings" : "Paramètres",
+    "Profile" : "Profile",
+    "Inbox" : "Boîte de réception",
+    "Log Out" : "Connectez - Out"
 }

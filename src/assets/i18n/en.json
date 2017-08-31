@@ -18,5 +18,9 @@
     "Spanish": "Spanish",
     "Italian": "Italian",
     "Farsi": "Farsi",
-    "Search" : "Search"
+    "Search" : "Search",
+    "Settings" : "Settings",
+    "Profile" : "Profile",
+    "Inbox" : "Inbox",
+    "Log Out" : "Log Out"
 }
