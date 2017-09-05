@@ -28,7 +28,7 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 
 In order to start the project use:
 ```bash
-$ git clone git@github.com:start-angular/SB-Admin-BS4-Angular-4.git
+$ git clone https://github.com/start-angular/SB-Admin-BS4-Angular-4
 $ cd SB-Admin-BS4-Angular-4
 # install the project's dependencies
 $ npm install
