@@ -10,6 +10,10 @@
         margin-left: 0 !important;
         margin-right: 235px;
     }
+    /*rtl dropdown items correction*/
+    .dropdown-menu {
+        text-align: right;
+    }
     * {
         direction: rtl;
     }
