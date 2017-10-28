@@ -22,5 +22,9 @@
     "Settings" : "Ajustes",
     "Profile" : "Profile",
     "Inbox" : "Bandeja de entrada",
-    "Log Out" : "Cerrar Sesión"
+    "Log Out" : "Cerrar Sesión",
+    "Pending Task" : "Tarea pendiente",
+    "In queue" : "En cola",
+    "Mail" : "Correo",
+    "View All" : "Ver todo"
 }

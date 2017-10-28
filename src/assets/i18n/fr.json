@@ -22,5 +22,9 @@
     "Settings" : "Paramètres",
     "Profile" : "Profile",
     "Inbox" : "Boîte de réception",
-    "Log Out" : "Connectez - Out"
+    "Log Out" : "Connectez - Out",
+    "Pending Task" : "Tâche en attente",
+    "In queue" : "Dans la queue",
+    "Mail" : "Courrier",
+    "View All" : "Voir tout"
 }

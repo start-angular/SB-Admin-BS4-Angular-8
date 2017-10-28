@@ -22,5 +22,9 @@
     "Settings" : "ترتیبات",
     "Profile" : "پروفائل",
     "Inbox" : "ان باکس",
-    "Log Out" : "لاگ آوٹ"
+    "Log Out" : "لاگ آوٹ",
+    "Pending Task" : "زیر التواء ٹاسک",
+    "In queue" : "قطار میں",
+    "Mail" : "میل",
+    "View All" : "سب دیکھیں"
 }
