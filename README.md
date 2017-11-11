@@ -15,8 +15,10 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 
 `sb-admin-bs4-angular4` provides the following features:
 - Developed using boostrap-v4.0.0-alpha.6
-- angular-v4.2.4
-- angular/cli-v1.1.3
+- angular-v4.4.6
+- angular/cli-v1.4.9
+- [ng-bootstrap](https://github.com/ng-bootstrap/)
+- [ngx-translate](https://github.com/ngx-translate)
 - Following the best practices.
 - Ahead-of-Time compilation support.
 - Official Angular i18n support.

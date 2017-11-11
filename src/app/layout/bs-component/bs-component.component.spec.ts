@@ -15,6 +15,7 @@ import {
     PopOverComponent,
     ProgressbarComponent,
     TabsComponent,
+    RatingComponent,
     TooltipComponent,
     TimepickerComponent,
 } from './components';
@@ -45,6 +46,7 @@ describe('BsComponentComponent', () => {
         PopOverComponent,
         ProgressbarComponent,
         TabsComponent,
+        RatingComponent,
         TooltipComponent,
         TimepickerComponent
       ]

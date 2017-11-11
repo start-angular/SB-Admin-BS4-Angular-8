@@ -8,5 +8,6 @@ export * from './pagination/pagination.component';
 export * from './pop-over/pop-over.component';
 export * from './progressbar/progressbar.component';
 export * from './tabs/tabs.component';
+export * from './rating/rating.component';
 export * from './tooltip/tooltip.component';
 export * from './timepicker/timepicker.component';

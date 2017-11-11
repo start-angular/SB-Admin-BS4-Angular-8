@@ -22,5 +22,9 @@
     "Settings" : "Impostazioni",
     "Profile" : "Profilo",
     "Inbox" : "Posta in arrivo",
-    "Log Out" : "Uscire"
+    "Log Out" : "Uscire",
+    "Pending Task" : "Attività in sospeso",
+    "In queue" : "In coda",
+    "Mail" : "Posta",
+    "View All" : "Visualizza tutti"
 }
