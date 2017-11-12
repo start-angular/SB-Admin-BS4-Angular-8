@@ -2,7 +2,7 @@
     <div class="col col-sm-6">
         <div class="card mt-3">
             <div class="card-header">Basic Pagination</div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="text-uppercase text-muted fs-12">Default pagination</div>
                 <ngb-pagination [collectionSize]="70" [(page)]="defaultPagination"></ngb-pagination>
                 <div class="text-uppercase text-muted fs-12">directionLinks = false</div>
@@ -18,7 +18,7 @@
     <div class="col col-sm-6">
         <div class="card mt-3">
             <div class="card-header">Advanced Pagination</div>
-            <div class="card-block">
+            <div class="card-body">
                 <div class="text-uppercase text-muted fs-12">maxSize = 5, rotate = false</div>
                 <ngb-pagination [collectionSize]="120" [(page)]="advancedPagination" [maxSize]="5" [boundaryLinks]="true"></ngb-pagination>
 
@@ -38,7 +38,7 @@
     <div class="col col-sm-6">
         <div class="card mt-3">
             <div class="card-header">Pagination size</div>
-            <div class="card-block">
+            <div class="card-body">
                 <ngb-pagination [collectionSize]="50" [(page)]="paginationSize" size="lg"></ngb-pagination>
                 <ngb-pagination [collectionSize]="50" [(page)]="paginationSize"></ngb-pagination>
                 <ngb-pagination [collectionSize]="50" [(page)]="paginationSize" size="sm"></ngb-pagination>
@@ -48,7 +48,7 @@
     <div class="col col-sm-6">
         <div class="card mt-3">
             <div class="card-header">Disabled pagination</div>
-            <div class="card-block">
+            <div class="card-body">
                 <p>Pagination control can be disabled:</p>
                 <ngb-pagination [collectionSize]="70" [(page)]="disabledPagination" [disabled]='isDisabled'></ngb-pagination>
                 <hr>

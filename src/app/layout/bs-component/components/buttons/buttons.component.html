@@ -4,16 +4,16 @@
             <div class="card-header">
                 Radio Button group (<strong>Using ngModel</strong>)
             </div>
-            <div class="card-block">
-                <div [(ngModel)]="model" ngbRadioGroup name="radioBasic">
-                    <label class="btn btn-primary">
-                        <input type="radio" [value]="1"> Left (pre-checked)
+            <div class="card-body">
+                <div class="btn-group mb-3" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+                    <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" [value]="1"> Left (pre-checked)
                     </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" value="middle"> Middle
+                    <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" value="middle"> Middle
                     </label>
-                    <label class="btn btn-primary">
-                        <input type="radio" [value]="false"> Right
+                    <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" [value]="false"> Right
                     </label>
                 </div>
                 <div class="alert alert-info mb-0">
@@ -27,8 +27,24 @@
             <div class="card-header">
                 Radio Button group (<strong>Ractive Forms</strong>)
             </div>
-            <div class="card-block">
-                <form [formGroup]="radioGroupForm">
+            <div class="card-body">
+                <form [formGroup]="radioGroupForm" class="mb-3">
+                    <div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="model">
+                        <label ngbButtonLabel class="btn-primary">
+                            <input ngbButton type="radio" [value]="1"> Left (pre-checked)
+                        </label>
+                        <label ngbButtonLabel class="btn-primary">
+                            <input ngbButton type="radio" value="middle"> Middle
+                        </label>
+                        <label ngbButtonLabel class="btn-primary">
+                            <input ngbButton type="radio" [value]="false"> Right
+                        </label>
+                    </div>
+                </form>
+                <div class="alert alert-info mb-0">
+                    <strong>Selected Value: </strong>{{radioGroupForm.value.model}}
+                </div>
+                <!-- <form [formGroup]="radioGroupForm">
                     <div ngbRadioGroup name="radioBasic" formControlName="model">
                         <label class="btn btn-primary">
                             <input type="radio" [value]="1"> Left (pre-checked)
@@ -40,10 +56,7 @@
                             <input type="radio" [value]="false"> Right
                         </label>
                     </div>
-                    <div class="alert alert-info mb-0">
-                        <strong>Selected Value: </strong>{{radioGroupForm.value.model}}
-                    </div>
-                </form>
+                </form> -->
             </div>
         </div>
     </div>

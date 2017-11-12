@@ -14,7 +14,7 @@ export class ButtonsComponent implements OnInit {
 
     ngOnInit() {
         this.radioGroupForm = this.formBuilder.group({
-            model: 1
+            model: 'middle'
         });
     }
 }

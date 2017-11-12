@@ -1,14 +1,14 @@
-import { SbAdminCliUpdatePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('sb-admin-cli-update App', () => {
-  let page: SbAdminCliUpdatePage;
+describe('test-ng4 App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new SbAdminCliUpdatePage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
-import { routerTransition } from '../../router.animations';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-bs-component',
     templateUrl: './bs-component.component.html',
-    styleUrls: ['./bs-component.component.scss'],
-    animations: [routerTransition()]
+    styleUrls: ['./bs-component.component.scss']
 })
-export class BsComponentComponent {
+export class BsComponentComponent implements OnInit {
+    constructor() {}
+
+    ngOnInit() {}
 }

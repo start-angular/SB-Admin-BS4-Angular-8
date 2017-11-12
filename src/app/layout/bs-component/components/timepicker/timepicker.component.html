@@ -2,7 +2,7 @@
     <div class="col-sm-6">
         <div class="card">
             <div class="card-header">Timepicker (<b>Default</b>)</div>
-            <div class="card-block">
+            <div class="card-body">
                 <ngb-timepicker [(ngModel)]="defaultTime"></ngb-timepicker>
                 <div class="alert alert-info">
                     <b>Selected time: </b>{{defaultTime | json}}
@@ -13,7 +13,7 @@
     <div class="col-sm-6">
         <div class="card">
             <div class="card-header">Timepicker (<b>Default</b>)</div>
-            <div class="card-block">
+            <div class="card-body">
                 <ngb-timepicker [(ngModel)]="meridianTime" [meridian]="meridian"></ngb-timepicker>
                 <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
                     Meridian - {{meridian ? "ON" : "OFF"}}
@@ -27,7 +27,7 @@
     <div class="col-sm-6">
         <div class="card">
             <div class="card-header">Timepicker (<b>Seconds</b>)</div>
-            <div class="card-block">
+            <div class="card-body">
                 <ngb-timepicker [(ngModel)]="SecondsTime" [seconds]="seconds"></ngb-timepicker>
                 <button class="btn btn-sm btn-outline-{{seconds ? 'success' : 'danger'}}" (click)="toggleSeconds()">
                     Seconds - {{seconds ? "ON" : "OFF"}}
@@ -41,7 +41,7 @@
     <div class="col-sm-6 mt-3">
         <div class="card">
             <div class="card-header">Timepicker (<b>Custom Step</b>)</div>
-            <div class="card-block">
+            <div class="card-body">
                 <ngb-timepicker [(ngModel)]="customTime" [seconds]="true"
                 [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep"></ngb-timepicker>
 

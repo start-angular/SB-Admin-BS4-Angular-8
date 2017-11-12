@@ -6,11 +6,7 @@ import { FormComponent } from './form.component';
 import { PageHeaderModule } from './../../shared';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormRoutingModule,
-        PageHeaderModule
-    ],
+    imports: [CommonModule, FormRoutingModule, PageHeaderModule],
     declarations: [FormComponent]
 })
-export class FormModule { }
+export class FormModule {}

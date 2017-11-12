@@ -4,8 +4,10 @@ import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
     {
-        path: '', component: LayoutComponent,
+        path: '',
+        component: LayoutComponent,
         children: [
+            { path: '', redirectTo: 'dashboard' },
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
             { path: 'charts', loadChildren: './charts/charts.module#ChartsModule' },
             { path: 'tables', loadChildren: './tables/tables.module#TablesModule' },
@@ -13,7 +15,7 @@ const routes: Routes = [
             { path: 'bs-element', loadChildren: './bs-element/bs-element.module#BsElementModule' },
             { path: 'grid', loadChildren: './grid/grid.module#GridModule' },
             { path: 'components', loadChildren: './bs-component/bs-component.module#BsComponentModule' },
-            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
+            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' }
         ]
     }
 ];
@@ -22,4 +24,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class LayoutRoutingModule { }
+export class LayoutRoutingModule {}

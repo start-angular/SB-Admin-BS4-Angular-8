@@ -8,6 +8,7 @@ import { routerTransition } from '../../router.animations';
     animations: [routerTransition()]
 })
 export class GridComponent implements OnInit {
-    constructor() { }
-    ngOnInit() { }
+    constructor() {}
+
+    ngOnInit() {}
 }

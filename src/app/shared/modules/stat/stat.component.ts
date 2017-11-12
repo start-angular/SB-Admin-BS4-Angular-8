@@ -13,7 +13,7 @@ export class StatComponent implements OnInit {
     @Input() data: number;
     @Output() event: EventEmitter<any> = new EventEmitter();
 
-    constructor() { }
+    constructor() {}
 
     ngOnInit() {}
 }

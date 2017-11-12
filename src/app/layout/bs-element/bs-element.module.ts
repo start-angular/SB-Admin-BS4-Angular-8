@@ -6,11 +6,7 @@ import { BsElementComponent } from './bs-element.component';
 import { PageHeaderModule } from './../../shared';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        BsElementRoutingModule,
-        PageHeaderModule
-    ],
+    imports: [CommonModule, BsElementRoutingModule, PageHeaderModule],
     declarations: [BsElementComponent]
 })
-export class BsElementModule { }
+export class BsElementModule {}
