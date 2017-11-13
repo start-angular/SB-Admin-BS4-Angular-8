@@ -15,5 +15,9 @@
         <button type="button" class="btn btn-secondary" placement="left" ngbTooltip="Tooltip on left">
           Tooltip on left
         </button>
+        <ng-template #StaticTipContent><em>Tooltip</em> <u>with</u> <b>HTML</b></ng-template>
+        <button type="button" class="btn btn-secondary" data-html="true" [ngbTooltip]="StaticTipContent">
+          Tooltip with HTML
+        </button>
     </div>
 </div>
