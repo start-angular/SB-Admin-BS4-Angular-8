@@ -1,6 +1,6 @@
 {
     "Dashboard": "Principal",
-    "Charts": "Caracteres",
+    "Charts": "Gráficas",
     "Tables": "Tablas",
     "Forms": "Formularios",
     "Boostrap Element": "Elementos Boostrap",
@@ -20,7 +20,7 @@
     "Farsi": "Farsi",
     "Search" : "Búsqueda",
     "Settings" : "Ajustes",
-    "Profile" : "Profile",
+    "Profile" : "Perfil",
     "Inbox" : "Bandeja de entrada",
     "Log Out" : "Cerrar Sesión"
 }
