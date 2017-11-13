@@ -3,8 +3,8 @@
     "Charts": "Grafici",
     "Tables": "Tabelle",
     "Forms": "Formulari",
-    "Boostrap Element": "Elementi Boostrap",
-    "Boostrap Grid": "Griglia Boostrap",
+    "Bootstrap Element": "Elementi Bootstrap",
+    "Bootstrap Grid": "Griglia Bootstrap",
     "Component": "Componenti",
     "Menu": "Menu",
     "Submenu": "Submenu",
@@ -18,9 +18,14 @@
     "Spanish": "Spagnolo",
     "Italian": "Italiano",
     "Farsi": "Farsi",
+    "German": "Tedesco",
     "Search" : "Ricerca",
     "Settings" : "Impostazioni",
     "Profile" : "Profilo",
     "Inbox" : "Posta in arrivo",
-    "Log Out" : "Uscire"
+    "Log Out" : "Uscire",
+    "Pending Task" : "Attività in sospeso",
+    "In queue" : "In coda",
+    "Mail" : "Posta",
+    "View All" : "Visualizza tutti"
 }
