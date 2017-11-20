@@ -16,6 +16,7 @@ import {
     PopOverComponent,
     ProgressbarComponent,
     TabsComponent,
+    RatingComponent,
     TooltipComponent,
     TimepickerComponent
 } from './components';
@@ -32,7 +33,6 @@ import { PageHeaderModule } from '../../shared';
     ],
     declarations: [
         BsComponentComponent,
-        BsComponentComponent,
         ButtonsComponent,
         AlertComponent,
         ModalComponent,
@@ -43,6 +43,7 @@ import { PageHeaderModule } from '../../shared';
         PopOverComponent,
         ProgressbarComponent,
         TabsComponent,
+        RatingComponent,
         TooltipComponent,
         TimepickerComponent
     ]

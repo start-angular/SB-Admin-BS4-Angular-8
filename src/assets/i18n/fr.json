@@ -3,8 +3,8 @@
     "Charts": "Hit-parade",
     "Tables": "Tableaux",
     "Forms": "Froms",
-    "Boostrap Element": "Bootstrap Élément",
-    "Boostrap Grid": "Bootstrap Grille",
+    "Bootstrap Element": "Bootstrap Élément",
+    "Bootstrap Grid": "Bootstrap Grille",
     "Component": "Composant",
     "Menu": "Menu",
     "Submenu": "Sous-menu",
@@ -18,9 +18,14 @@
     "Spanish": "Spanish",
     "Italian": "Italien",
     "Farsi": "Farsi",
+    "German": "Allemand",
     "Search" : "Chercher",
     "Settings" : "Paramètres",
     "Profile" : "Profile",
     "Inbox" : "Boîte de réception",
-    "Log Out" : "Connectez - Out"
+    "Log Out" : "Connectez - Out",
+    "Pending Task" : "Tâche en attente",
+    "In queue" : "Dans la queue",
+    "Mail" : "Courrier",
+    "View All" : "Voir tout"
 }
