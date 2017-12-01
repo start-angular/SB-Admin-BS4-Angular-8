@@ -15,8 +15,8 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 
 `sb-admin-bs4-angular5` provides the following features:
 - Developed using boostrap-v4.0.0-beta.2
-- angular-v5.0.1
-- angular/cli-v1.5.0
+- angular-v5.0.3
+- angular/cli-v1.5.3
 - [ng-bootstrap](https://github.com/ng-bootstrap/)
 - [ngx-translate](https://github.com/ngx-translate)
 - Following the best practices.
