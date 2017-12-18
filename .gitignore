@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+# dist
+/dist
+
 # dependencies
 /node_modules
 
@@ -40,3 +43,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+package-lock.json
