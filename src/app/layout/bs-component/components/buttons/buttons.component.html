@@ -5,7 +5,7 @@
                 Radio Button group (<strong>Using ngModel</strong>)
             </div>
             <div class="card-body">
-                <div class="btn-group mb-3" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
+                <div class="btn-group btn-group-toggle mb-3" ngbRadioGroup name="radioBasic" [(ngModel)]="model">
                     <label ngbButtonLabel class="btn-primary">
                         <input ngbButton type="radio" [value]="1"> Left (pre-checked)
                     </label>
@@ -29,7 +29,7 @@
             </div>
             <div class="card-body">
                 <form [formGroup]="radioGroupForm" class="mb-3">
-                    <div class="btn-group" ngbRadioGroup name="radioBasic" formControlName="model">
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" formControlName="model">
                         <label ngbButtonLabel class="btn-primary">
                             <input ngbButton type="radio" [value]="1"> Left (pre-checked)
                         </label>

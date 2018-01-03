@@ -3,9 +3,9 @@
     <div class="card-body">
         <div class="row">
             <div class="col">
-                <div ngbDropdown class="d-inline-block">
+                <div ngbDropdown class="d-inline-block dropdown">
                     <button class="btn btn-outline-primary" ngbDropdownToggle>Toggle dropdown</button>
-                    <div class="dropdown-menu">
+                    <div ngbDropdownMenu>
                         <button class="dropdown-item">Action</button>
                         <button class="dropdown-item">Another Action</button>
                         <button class="dropdown-item">Something else is here</button>
@@ -13,7 +13,7 @@
                 </div>
             </div>
             <div class="col text-right">
-                <div ngbDropdown placement="top-right" class="d-inline-block">
+                <div ngbDropdown placement="top-right" class="d-inline-block dropdown">
                     <button class="btn btn-outline-primary" ngbDropdownToggle>Toggle dropup</button>
                     <div ngbDropdownMenu>
                         <button class="dropdown-item">Action</button>
@@ -25,15 +25,18 @@
         </div>
         <hr>
         <p class="mb-2">You can easily control dropdowns programmatically using the exported dropdown instance.</p>
-        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+        <div class="d-inline-block dropdown" ngbDropdown #myDrop="ngbDropdown">
             <button class="btn btn-outline-primary" ngbDropdownToggle>Toggle dropdown</button>
-            <div class="dropdown-menu">
+            <div ngbDropdownMenu>
                 <button class="dropdown-item">Action</button>
                 <button class="dropdown-item">Another Action</button>
                 <button class="dropdown-item">Something else is here</button>
             </div>
-
+        </div>
+        <div class="d-inline-block dropdown" ngbDropdown #myDrop="ngbDropdown">
             <button class="btn btn-outline-success" (click)="$event.stopPropagation(); myDrop.open();">Open from outside</button>
+        </div>
+        <div class="d-inline-block dropdown" ngbDropdown #myDrop="ngbDropdown">
             <button class="btn btn-outline-danger" (click)="$event.stopPropagation(); myDrop.close();">Close from outside</button>
         </div>
     </div>

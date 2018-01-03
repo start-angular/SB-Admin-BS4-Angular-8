@@ -5,12 +5,13 @@
             <div class="card-body">
                 <form class="form-inline mb-3">
                     <div class="form-group">
-                        <div class="input-group">
+                        <div class="input-group datepicker-input">
                             <input class="form-control" placeholder="yyyy-mm-dd"
                                 name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-                            <div class="input-group-addon" (click)="d.toggle()" >
+                            <button class="input-group-addon" (click)="d.toggle()" type="button">
+                                <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
                                 <span class="fa fa-calendar"></span>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </form>
