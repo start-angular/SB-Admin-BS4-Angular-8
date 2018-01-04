@@ -39,6 +39,13 @@ $topnav-background-color: #222;
             background: darken($topnav-background-color, 5%);
             color: #fff;
         }
+        .header-fields {
+            padding-top: 10px;
+        
+            > .list-group-item:first-child {
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
+            }
+        }
     }
     .sidebar-dropdown {
         *:focus {
@@ -123,6 +130,11 @@ $topnav-background-color: #222;
     .sidebar {
         top: 54px;
         left: 0px;
+    }
+}
+@media (min-width: 992px) {
+    .header-fields {
+        display: none;
     }
 }
 
