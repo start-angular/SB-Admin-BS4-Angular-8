@@ -1,7 +1,7 @@
 {
     "name": "SB-Admin-BS4-Angular-5",
     "version": "4.0.0",
-    "license": "MIT",
+    "license": "Apache",
     "scripts": {
         "ng": "ng",
         "start": "ng serve --ec true",
