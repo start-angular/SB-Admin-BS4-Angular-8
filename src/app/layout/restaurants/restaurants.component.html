@@ -1,0 +1,40 @@
+<div [@routerTransition]>
+	<app-page-header [heading]="'Restaurants'" [icon]="'fa fa-cutlery'"></app-page-header>
+	
+	<div class="row">
+		<div class="col col-xl-12 col-lg-12">
+			<table class="table table-hover table-striped">
+	            <tbody>
+					<tr *ngFor="let item of restaurants">
+						<td>{{ item.name }}</td>
+						<td>
+							<input type="checkbox" name="items[]" [value]="item.id" class="css-checkbox" id="{{ item.name }}" [(ngModel)]="item.status" (change)="markForDeletion(item.id)">
+							<label for="{{ item.name }}" class="css-label float-right"></label>
+						</td>
+					</tr>
+	            </tbody>
+			</table>
+			<div class="float-right delete-button" [hidden]="!markedForDeletion.length">
+				<a href="javascript:void(0)" (click)="confirm(content)"><i class="fa fa-trash"></i></a>
+			</div>
+			<div class="float-right add-button">
+				<a href="#"><i class="fa fa-plus"></i></a>
+			</div>
+		</div>
+	</div>
+	<ng-template #content let-c="close" let-d="dismiss">
+		<div class="modal-header">
+			<h4 class="modal-title">Are you sure?</h4>
+			<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body">
+			<p>{{ markedForDeletion.length }} items will be deleted</p>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+			<button type="button" class="btn btn-danger" (click)="delete(event)">Confirm</button>
+		</div>
+	</ng-template>
+</div>

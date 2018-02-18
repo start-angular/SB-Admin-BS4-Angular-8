@@ -3,17 +3,17 @@
         <div class="col-md-4">
             <img src="assets/images/logo.png" width="150px" class="user-avatar" />
             <h1>SB Admin BS4 Angular5</h1>
-            <form role="form">
+            <form #loginForm="ngForm" (ngSubmit)="doLogin(loginForm)">
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="Email">
+                        <input type="text" class="form-control input-underline input-lg" id="loginFormUsername" placeholder="Email" name="username" [ngModel]="login.username">
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
+                        <input type="password" class="form-control input-underline input-lg" id="loginFormPassword" placeholder="Password" name="password" [ngModel]="login.password">
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()"> Log in </a>
+                <button class="btn rounded-btn" type="submit"> Log in </button>
                 &nbsp;
                 <a class="btn rounded-btn" [routerLink]="['/signup']">Register</a>
             </form>

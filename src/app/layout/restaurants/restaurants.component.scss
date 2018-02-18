@@ -1,0 +1,61 @@
+.add-button {
+    border: thin solid #111;
+    background-color: #222;
+    border-radius: 100%;
+    position: fixed;
+    right: 1%;
+    bottom: 5%; 
+    a {
+        display: block;
+        padding: 35px 40px;
+    }
+    i {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+.delete-button {
+    border: thin solid darkred;
+    background-color: red;
+    border-radius: 100%;
+    position: fixed;
+    right: 1%;
+    bottom: 15%; 
+    a {
+        display: block;
+        padding: 35px 40px;
+    }
+    i {
+        color: #fff;
+        font-size: 20px;
+    }
+}
+input[type=checkbox].css-checkbox {
+    position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:30px;
+    height:25px; 
+    display:inline-block;
+    line-height:25px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    font-size:25px;
+    vertical-align:middle;
+    cursor:pointer;
+
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -25px;
+}
+label.css-label {
+background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_391ce065f36b1460c4845fa9b5173fba.png);
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}

@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 
+import { FormsModule } from '@angular/forms';
+
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
     // for development
@@ -19,6 +21,7 @@ export function createTranslateLoader(http: HttpClient) {
 
 @NgModule({
     imports: [
+        FormsModule,
         CommonModule,
         BrowserModule,
         BrowserAnimationsModule,
@@ -32,6 +35,7 @@ export function createTranslateLoader(http: HttpClient) {
         }),
         AppRoutingModule
     ],
+    exports: [],
     declarations: [AppComponent],
     providers: [AuthGuard],
     bootstrap: [AppComponent]

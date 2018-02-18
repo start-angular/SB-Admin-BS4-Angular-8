@@ -1,7 +1,7 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export function routerTransition() {
-    return slideToTop();
+    return fadeInOut();
 }
 
 export function slideToRight() {
@@ -60,6 +60,16 @@ export function slideToTop() {
         transition(':leave', [
             style({ transform: 'translateY(0%)' }),
             animate('0.5s ease-in-out', style({ transform: 'translateY(-100%)' }))
+        ])
+    ]);
+}
+export function fadeInOut() {
+    return trigger('routerTransition', [
+        state('void', style({})),
+        state('*', style({})),
+        transition(':enter', [
+            style({opacity: 0}),
+            animate('.3s', style({opacity: 1}))
         ])
     ]);
 }

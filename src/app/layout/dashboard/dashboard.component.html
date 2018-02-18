@@ -1,20 +1,6 @@
 <div [@routerTransition]>
     <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
     <div class="row">
-        <div class="col-md-12">
-            <ngb-carousel>
-                <ng-template ngbSlide *ngFor="let slider of sliders">
-                    <img class="img-fluid mx-auto d-block" [src]="slider.imagePath" alt="Random first slide" width="100%">
-                    <div class="carousel-caption">
-                        <h3>{{slider.label}}</h3>
-                        <p>{{slider.text}}</p>
-                    </div>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
         <div class="col-xl-3 col-lg-6">
             <app-stat [bgClass]="'primary'" [icon]="'fa-comments'" [count]="26" [label]="'New Comments!'" ></app-stat>
         </div>
