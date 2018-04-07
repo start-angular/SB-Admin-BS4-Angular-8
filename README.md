@@ -8,7 +8,7 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 ## [Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-5/master/dist/)
 
-### [Demo](https://www.paypal.me/nitinkrmr/5)
+### [Donate](https://www.paypal.me/nitinkrmr/5)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
