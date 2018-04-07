@@ -6,7 +6,8 @@ This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v5.0](
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
-## [Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-5/master/dist/)
+## [Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-5/master/dist/) 
+### [Donate](https://www.paypal.me/nitinkrmr/10)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
