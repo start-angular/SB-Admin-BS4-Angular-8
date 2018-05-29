@@ -132,6 +132,11 @@ $topnav-background-color: #222;
         left: 0px;
     }
 }
+@media print {
+    .sidebar {
+        display: none !important;
+    }
+}
 @media (min-width: 992px) {
     .header-fields {
         display: none;

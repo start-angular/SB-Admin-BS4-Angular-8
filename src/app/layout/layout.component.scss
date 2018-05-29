@@ -13,3 +13,9 @@
         margin-left: 0px !important;
     }
 }
+@media print {
+    .main-container {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+}
