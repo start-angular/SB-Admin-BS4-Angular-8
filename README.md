@@ -8,6 +8,8 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 ## [Demo](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-6/master/dist/)
 
+## [SB Admin Material version](https://github.com/start-javascript/sb-admin-material)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
 ### Introduction
