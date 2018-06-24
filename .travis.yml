@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - '9'
+  - '10'
+
+install:
+  - npm install
+
+script:
+  - npm run test-ci
+
+cache:
+  directories:
+  - node_modules
