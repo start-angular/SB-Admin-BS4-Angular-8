@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -9,9 +9,12 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class SidebarComponent {
     isActive: boolean = false;
+    collapsed: boolean = false;
     showMenu: string = '';
     pushRightClass: string = 'push-right';
 
+    @Output() collapsedEvent = new EventEmitter<boolean>();
+    
     constructor(private translate: TranslateService, public router: Router) {
         this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de']);
         this.translate.setDefaultLang('en');
@@ -39,6 +42,11 @@ export class SidebarComponent {
         } else {
             this.showMenu = element;
         }
+    }
+
+    toggleCollapsed() {
+        this.collapsed = !this.collapsed;
+        this.collapsedEvent.emit(this.collapsed);
     }
 
     isToggled(): boolean {
