@@ -1,3 +1,10 @@
+* {
+    -webkit-transition: margin-left 0.2s ease-in-out;
+    -moz-transition: margin-left 0.2s ease-in-out;
+    -ms-transition: margin-left 0.2s ease-in-out;
+    -o-transition: margin-left 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
+}
 .main-container {
     margin-top: 56px;
     margin-left: 235px;
@@ -7,6 +14,9 @@
     overflow-y: scroll;
     position: relative;
     overflow: hidden;
+}
+.collapsed {
+    margin-left: 100px;
 }
 @media screen and (max-width: 992px) {
     .main-container {
