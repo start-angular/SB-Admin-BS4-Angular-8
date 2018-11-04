@@ -30,5 +30,11 @@
     "Mail" : "Posta",
     "View All" : "Visualizza tutti",
     "More Themes" : "Altri Temi",
-    "Collapse Sidebar" : "Collassa Sidebar"
+    "Collapse Sidebar" : "Collassa Sidebar",
+    "Full Name": "Nome Completo",
+    "Email": "Posta Elettronica",
+    "Password": "Password",
+    "Repeat Password": "Ripetere la password",
+    "Register": "Registrarsi",
+    "Log in": "Entrare"
 }

@@ -30,5 +30,11 @@
     "Mail" : "Correo",
     "View All" : "Ver todo",
     "More Themes" : "Más temas",
-    "Collapse Sidebar" : "Contraer barra lateral"
+    "Collapse Sidebar" : "Contraer barra lateral",
+    "Full Name": "Nombre Completo",
+    "Email": "Correo Electrónico",
+    "Password": "Contraseña",
+    "Repeat Password": "Repetir Contraseña",
+    "Register": "Registrarse",
+    "Log in": "Entrar"
 }
