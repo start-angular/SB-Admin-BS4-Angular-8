@@ -28,7 +28,7 @@ import { PageHeaderModule } from '../../shared';
         BsComponentRoutingModule,
         FormsModule,
         ReactiveFormsModule,
-        NgbModule.forRoot(),
+        NgbModule,
         PageHeaderModule
     ],
     declarations: [

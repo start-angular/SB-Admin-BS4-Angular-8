@@ -12,7 +12,7 @@ describe('DatePickerComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ DatePickerComponent ]
     })

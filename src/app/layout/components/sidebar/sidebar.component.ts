@@ -7,14 +7,14 @@ import { TranslateService } from '@ngx-translate/core';
     templateUrl: './sidebar.component.html',
     styleUrls: ['./sidebar.component.scss']
 })
-export class SidebarComponent {
-    isActive: boolean = false;
-    collapsed: boolean = false;
-    showMenu: string = '';
-    pushRightClass: string = 'push-right';
+export class SidebarComponent implements OnInit {
+    isActive: boolean;
+    collapsed: boolean;
+    showMenu: string;
+    pushRightClass: string;
 
     @Output() collapsedEvent = new EventEmitter<boolean>();
-    
+
     constructor(private translate: TranslateService, public router: Router) {
         this.translate.addLangs(['en', 'fr', 'ur', 'es', 'it', 'fa', 'de']);
         this.translate.setDefaultLang('en');
@@ -31,6 +31,14 @@ export class SidebarComponent {
             }
         });
     }
+
+    ngOnInit() {
+        this.isActive = false;
+        this.collapsed = false;
+        this.showMenu = '';
+        this.pushRightClass = 'push-right';
+    }
+
 
     eventCalled() {
         this.isActive = !this.isActive;
