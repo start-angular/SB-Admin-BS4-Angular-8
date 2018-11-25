@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-    pushRightClass: string = 'push-right';
+    public pushRightClass: string;
 
     constructor(private translate: TranslateService, public router: Router) {
 
@@ -28,7 +28,9 @@ export class HeaderComponent implements OnInit {
         });
     }
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.pushRightClass = 'push-right';
+    }
 
     isToggled(): boolean {
         const dom: Element = document.querySelector('body');

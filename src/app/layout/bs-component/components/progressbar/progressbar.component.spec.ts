@@ -10,7 +10,7 @@ describe('ProgressbarComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ ProgressbarComponent ]
     })

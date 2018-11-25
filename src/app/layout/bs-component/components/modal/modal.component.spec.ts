@@ -10,7 +10,7 @@ describe('ModalComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ ModalComponent ]
     })

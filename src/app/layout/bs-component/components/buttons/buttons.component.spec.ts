@@ -13,7 +13,7 @@ describe('ButtonsComponent', () => {
       imports: [
         FormsModule,
         ReactiveFormsModule,
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ ButtonsComponent ]
     })

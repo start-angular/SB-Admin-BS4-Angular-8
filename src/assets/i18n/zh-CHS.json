@@ -28,5 +28,13 @@
     "Pending Task" : "挂起任务",
     "In queue" : "队列中",
     "Mail" : "邮件",
-    "View All" : "查看所有"
+    "View All" : "查看所有",
+    "More Themes" : "More Themes",
+    "Collapse Sidebar" : "Collapse Sidebar",
+    "Full Name": "Full Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Repeat Password": "Repeat Password",
+    "Register": "Register",
+    "Log in": "Log in"
 }

@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "Angular.ng-template",
+    "eamodio.gitlens",
+    "eg2.tslint",
+    "joelday.docthis",
+    "esbenp.prettier-vscode",
+    "Mikael.Angular-BeastCode",
+    "PKief.material-icon-theme",
+    "ruiquelhas.vscode-uppercase",
+    "xyz.local-history",
+    "msjsdiag.debugger-for-chrome"
+  ]
+}
