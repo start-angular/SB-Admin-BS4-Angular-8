@@ -159,19 +159,20 @@
 
             <form role="form">
 
-                <div class="form-group has-success">
+                <div class="form-group">
                     <label class="form-control-label" for="inputSuccess">Input with success</label>
-                    <input type="text" class="form-control form-control-success" id="inputSuccess">
+                    <input type="text" class="form-control is-valid" id="inputSuccess">
+                    <div class="valid-feedback">
+                      Input success message
+                    </div>
                 </div>
 
-                <div class="form-group has-warning">
-                    <label class="form-control-label" for="inputWarning">Input with warning</label>
-                    <input type="text" class="form-control form-control-warning" id="inputWarning">
-                </div>
-
-                <div class="form-group has-danger">
+                <div class="form-group">
                     <label class="form-control-label" for="inputError">Input with danger</label>
-                    <input type="text" class="form-control form-control-danger" id="inputError">
+                    <input type="text" class="form-control is-invalid" id="inputError">
+                    <div class="invalid-feedback">
+                      Input error message
+                    </div>
                 </div>
 
             </form>
@@ -221,7 +222,7 @@
 
             </form>
 
-            <p>For complete documentation, please visit <a target="_blank" href="http://v4-alpha.getbootstrap.com/components/forms/">Bootstrap's Form Documentation</a>.</p>
+            <p>For complete documentation, please visit <a target="_blank" href="https://getbootstrap.com/docs/4.0/components/forms/">Bootstrap's Form Documentation</a>.</p>
 
         </div>
     </div>
