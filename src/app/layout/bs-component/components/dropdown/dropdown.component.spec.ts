@@ -10,7 +10,7 @@ describe('DropdownComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ DropdownComponent ]
     })

@@ -3,6 +3,7 @@
 # compiled output
 /tmp
 /out-tsc
+/dist
 
 # dependencies
 /node_modules
@@ -12,6 +13,7 @@ package-lock.json
 /.idea
 .project
 .classpath
+.history
 .c9/
 *.launch
 .settings/

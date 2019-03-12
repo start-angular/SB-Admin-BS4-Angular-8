@@ -10,7 +10,7 @@ describe('AlertComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AlertComponent ],
-      imports: [ NgbModule.forRoot() ]
+      imports: [ NgbModule ]
     })
     .compileComponents();
   }));

@@ -28,5 +28,13 @@
     "Pending Task" : "وظایف در انتظار",
     "In queue" : "در صف",
     "Mail" : "ایمیل",
-    "View All" : "نمایش همه"
+    "View All" : "نمایش همه",
+    "More Themes" : "More Themes",
+    "Collapse Sidebar" : "Collapse Sidebar",
+    "Full Name": "Full Name",
+    "Email": "Email",
+    "Password": "Password",
+    "Repeat Password": "Repeat Password",
+    "Register": "Register",
+    "Log in": "Log in"
 }

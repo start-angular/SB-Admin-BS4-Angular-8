@@ -28,5 +28,13 @@
     "Pending Task" : "Tâche en attente",
     "In queue" : "Dans la queue",
     "Mail" : "Courrier",
-    "View All" : "Voir tout"
+    "View All" : "Voir tout",
+    "More Themes" : "More Themes",
+    "Collapse Sidebar" : "Collapse Sidebar",
+    "Full Name": "Nom complet",
+    "Email": "Email",
+    "Password": "mot de passe",
+    "Repeat Password": "Répéter le mot de passe",
+    "Register": "registre",
+    "Log in": "S'identifier"
 }

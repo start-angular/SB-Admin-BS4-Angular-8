@@ -22,8 +22,8 @@ export class ChartsComponent implements OnInit {
         '2011',
         '2012'
     ];
-    public barChartType: string = 'bar';
-    public barChartLegend: boolean = true;
+    public barChartType: string;
+    public barChartLegend: boolean;
 
     public barChartData: any[] = [
         { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
@@ -37,7 +37,7 @@ export class ChartsComponent implements OnInit {
         'Mail-Order Sales'
     ];
     public doughnutChartData: number[] = [350, 450, 100];
-    public doughnutChartType: string = 'doughnut';
+    public doughnutChartType: string;
 
     // Radar
     public radarChartLabels: string[] = [
@@ -53,7 +53,7 @@ export class ChartsComponent implements OnInit {
         { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
         { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
     ];
-    public radarChartType: string = 'radar';
+    public radarChartType: string;
 
     // Pie
     public pieChartLabels: string[] = [
@@ -62,7 +62,7 @@ export class ChartsComponent implements OnInit {
         'Mail Sales'
     ];
     public pieChartData: number[] = [300, 500, 100];
-    public pieChartType: string = 'pie';
+    public pieChartType: string;
 
     // PolarArea
     public polarAreaChartLabels: string[] = [
@@ -73,9 +73,9 @@ export class ChartsComponent implements OnInit {
         'Corporate Sales'
     ];
     public polarAreaChartData: number[] = [300, 500, 100, 40, 120];
-    public polarAreaLegend: boolean = true;
+    public polarAreaLegend: boolean;
 
-    public polarAreaChartType: string = 'polarArea';
+    public polarAreaChartType: string;
 
     // lineChart
     public lineChartData: Array<any> = [
@@ -124,8 +124,8 @@ export class ChartsComponent implements OnInit {
             pointHoverBorderColor: 'rgba(148,159,177,0.8)'
         }
     ];
-    public lineChartLegend: boolean = true;
-    public lineChartType: string = 'line';
+    public lineChartLegend: boolean;
+    public lineChartType: string;
 
     // events
     public chartClicked(e: any): void {
@@ -160,5 +160,15 @@ export class ChartsComponent implements OnInit {
 
     constructor() {}
 
-    ngOnInit() {}
+    ngOnInit() {
+        this.barChartType = 'bar';
+        this.barChartLegend = true;
+        this.doughnutChartType = 'doughnut';
+        this.radarChartType = 'radar';
+        this.pieChartType = 'pie';
+        this.polarAreaLegend = true;
+        this.polarAreaChartType = 'polarArea';
+        this.lineChartLegend = true;
+        this.lineChartType = 'line';
+    }
 }

@@ -12,7 +12,7 @@ describe('TimepickerComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         FormsModule,
-        NgbModule.forRoot()
+        NgbModule
       ],
       declarations: [ TimepickerComponent ]
     })

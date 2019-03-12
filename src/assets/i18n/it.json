@@ -28,5 +28,13 @@
     "Pending Task" : "Attività in sospeso",
     "In queue" : "In coda",
     "Mail" : "Posta",
-    "View All" : "Visualizza tutti"
+    "View All" : "Visualizza tutti",
+    "More Themes" : "Altri Temi",
+    "Collapse Sidebar" : "Collassa Sidebar",
+    "Full Name": "Nome Completo",
+    "Email": "Posta Elettronica",
+    "Password": "Password",
+    "Repeat Password": "Ripetere la password",
+    "Register": "Registrarsi",
+    "Log in": "Entrare"
 }
