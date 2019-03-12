@@ -31,10 +31,10 @@
     "View All" : "Voir tout",
     "More Themes" : "More Themes",
     "Collapse Sidebar" : "Collapse Sidebar",
-    "Full Name": "Full Name",
+    "Full Name": "Nom complet",
     "Email": "Email",
-    "Password": "Password",
-    "Repeat Password": "Repeat Password",
-    "Register": "Register",
-    "Log in": "Log in"
+    "Password": "mot de passe",
+    "Repeat Password": "Répéter le mot de passe",
+    "Register": "registre",
+    "Log in": "S'identifier"
 }
