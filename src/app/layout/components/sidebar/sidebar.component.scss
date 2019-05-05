@@ -43,7 +43,7 @@ $topnav-background-color: #222;
         }
         .header-fields {
             padding-top: 10px;
-        
+
             > .list-group-item:first-child {
                 border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
@@ -184,7 +184,7 @@ $topnav-background-color: #222;
 }
 
 .collapsed {
-    width: 50px;
+    width: 60px;
     span {
         display: none;
     }
