@@ -4,7 +4,6 @@
   "license": "Apache",
   "scripts": {
     "ng": "ng",
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
     "gitbuild": "ng build --prod --base-href /start-angular/SB-Admin-BS4-Angular-7/master/dist/",
