@@ -29,8 +29,8 @@ module.exports = function (config) {
         logLevel: config.LOG_INFO,
         autoWatch: true,
         browsers: ['Chrome'],
-        singleRun: false,
-    }
+        singleRun: false
+    };
 
     if (process.env.TEST_CI) {
         Object.assign(defaults, {
@@ -43,9 +43,9 @@ module.exports = function (config) {
                     flags: ['--no-sandbox']
                 }
             },
-            browserNoActivityTimeout: 60000,
-        })
+            browserNoActivityTimeout: 60000
+        });
     }
 
-    config.set(defaults)
+    config.set(defaults);
 };

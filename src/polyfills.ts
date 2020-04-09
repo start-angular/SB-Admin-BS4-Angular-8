@@ -28,7 +28,6 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
  * BROWSER POLYFILLS
  */
 
-
 /**
  * If the application will be indexed by Google Search, the following is required.
  * Googlebot uses a renderer based on Chrome 41.
@@ -56,9 +55,9 @@ import 'zone.js/dist/zone'; // Included with Angular CLI.
 // (window as any).__zone_symbol__BLACK_LISTED_EVENTS = ['scroll', 'mousemove']; // disable patch specified eventNames
 
 /*
-* in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
-* with the following flag, it will bypass `zone.js` patch for IE/Edge
-*/
+ * in IE/Edge developer tools, the addEventListener will also be wrapped by zone.js
+ * with the following flag, it will bypass `zone.js` patch for IE/Edge
+ */
 // (window as any).__Zone_enable_cross_context_check = true;
 
 /***************************************************************************************************

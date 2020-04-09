@@ -2,9 +2,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%,-50%); /* IE 9 */
-    -webkit-transform: translate(-50%,-50%); /* Safari */
-    transform: translate(-50%,-50%); /* Standard syntax */
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari */
+    transform: translate(-50%, -50%); /* Standard syntax */
     width: 70px;
     height: 70px;
     > div {
@@ -29,16 +29,25 @@
 }
 
 @-webkit-keyframes sk-bouncedelay {
-    0%, 80%, 100% { -webkit-transform: scale(0) }
-    40% { -webkit-transform: scale(1.0) }
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+    }
 }
 
 @keyframes sk-bouncedelay {
-    0%, 80%, 100% {
+    0%,
+    80%,
+    100% {
         -webkit-transform: scale(0);
         transform: scale(0);
-    } 40% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
