@@ -6,20 +6,23 @@
                 <form class="form-inline mb-3">
                     <div class="form-group">
                         <div class="input-group datepicker-input">
-                            <input class="form-control" placeholder="yyyy-mm-dd"
-                                name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-                            <button class="input-group-addon" (click)="d.toggle()" type="button">
+                            <input
+                                #d="ngbDatepicker"
+                                [(ngModel)]="model"
+                                class="form-control"
+                                name="dp"
+                                ngbDatepicker
+                                placeholder="yyyy-mm-dd"
+                            />
+                            <button (click)="d.toggle()" class="input-group-addon" type="button">
                                 <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
                                 <span class="fa fa-calendar"></span>
                             </button>
                         </div>
                     </div>
                 </form>
-                <div class="alert alert-info mb-0">
-                    <strong>Model: </strong> {{ model | json }}
-                </div>
+                <div class="alert alert-info mb-0"><strong>Model: </strong> {{ model | json }}</div>
             </div>
         </div>
     </div>
 </div>
-

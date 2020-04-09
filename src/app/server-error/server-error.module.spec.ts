@@ -1,13 +1,13 @@
 import { ServerErrorModule } from './server-error.module';
 
 describe('ServerErrorModule', () => {
-  let serverErrorModule: ServerErrorModule;
+    let serverErrorModule: ServerErrorModule;
 
-  beforeEach(() => {
-    serverErrorModule = new ServerErrorModule();
-  });
+    beforeEach(() => {
+        serverErrorModule = new ServerErrorModule();
+    });
 
-  it('should create an instance', () => {
-    expect(serverErrorModule).toBeTruthy();
-  });
+    it('should create an instance', () => {
+        expect(serverErrorModule).toBeTruthy();
+    });
 });

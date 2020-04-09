@@ -4,7 +4,7 @@
             <div class="card-header">Buttons</div>
             <div class="card-body">
                 <p *ngFor="let alert of alerts">
-                    <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+                    <ngb-alert (close)="closeAlert(alert)" [type]="alert.type">{{ alert.message }}</ngb-alert>
                 </p>
             </div>
         </div>

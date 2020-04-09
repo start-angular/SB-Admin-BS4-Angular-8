@@ -1,0 +1,8 @@
+package.json
+package-lock.json
+dist
+.angulardoc.json
+.vscode/*
+.history/*
+node_modules/*
+src/assets

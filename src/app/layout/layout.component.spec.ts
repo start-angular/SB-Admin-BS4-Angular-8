@@ -6,28 +6,22 @@ import { LayoutComponent } from './layout.component';
 import { LayoutModule } from './layout.module';
 
 describe('LayoutComponent', () => {
-  let component: LayoutComponent;
-  let fixture: ComponentFixture<LayoutComponent>;
+    let component: LayoutComponent;
+    let fixture: ComponentFixture<LayoutComponent>;
 
-  beforeEach(
-    async(() => {
-      TestBed.configureTestingModule({
-        imports: [
-          LayoutModule,
-          RouterTestingModule,
-          TranslateModule.forRoot(),
-        ]
-      }).compileComponents();
-    })
-  );
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [LayoutModule, RouterTestingModule, TranslateModule.forRoot()]
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LayoutComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(LayoutComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });
