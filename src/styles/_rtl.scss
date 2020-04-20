@@ -2,6 +2,7 @@
     .sidebar {
         left: auto !important;
         right: 0 !important;
+        text-align: right;
         > ul.list-group {
             padding: 0;
         }
@@ -22,7 +23,7 @@
     }
 
     .sidebar * {
-        direction: ltr;
+        direction: rtl;
     }
 
     .navbar .dropdown-menu {
