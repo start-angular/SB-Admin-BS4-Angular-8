@@ -5,16 +5,15 @@ import { TablesComponent } from './tables.component';
 import { TablesModule } from './tables.module';
 
 describe('TablesComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [ TablesModule, RouterTestingModule ],
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [TablesModule, RouterTestingModule]
+        }).compileComponents();
+    }));
 
-  it('should create', () => {
-    const fixture = TestBed.createComponent(TablesComponent);
-    const component = fixture.componentInstance;
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        const fixture = TestBed.createComponent(TablesComponent);
+        const component = fixture.componentInstance;
+        expect(component).toBeTruthy();
+    });
 });

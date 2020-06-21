@@ -1,123 +1,132 @@
 <nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#">SB Admin Angular8 BS4 </a>
-    <button class="navbar-toggler" type="button" (click)="toggleSidebar()">
+    <a class="navbar-brand" href="#">SB Admin Angular9 BS4 </a>
+    <button (click)="toggleSidebar()" class="navbar-toggler" type="button">
         <!-- <span class="navbar-toggler-icon"></span> -->
-        <i class="fa fa-bars text-muted" aria-hidden="true"></i>
+        <i aria-hidden="true" class="fa fa-bars text-muted"></i>
     </button>
     <div class="collapse navbar-collapse">
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="{{ 'Search' | translate }}" >
+            <input class="form-control mr-sm-2" placeholder="{{ 'Search' | translate }}" type="text" />
         </form>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item d-none d-xl-block">
                 <a
+                    class="nav-link btn mt-1"
                     href="https://github.com/start-angular/SB-Admin-BS4-Angular-7/archive/master.zip"
-                    class="nav-link btn mt-1" role="button"
-                    style="padding: .375rem 1rem !important;border-color: #999;"
+                    role="button"
+                    style="padding: 0.375rem 1rem !important; border-color: #999;"
                 >
                     {{ 'Download Now' | translate }}
                 </a>
-            </li> &nbsp;
+            </li>
+            &nbsp;
             <li class="nav-item">
-                <a href="javascript:void(0)" class="nav-link mt-1"
-                    style="padding: 0.375rem 1rem !important; border-color: #999;"
+                <a
                     (click)="rltAndLtr()"
+                    class="nav-link mt-1"
+                    href="javascript:void(0)"
+                    style="padding: 0.375rem 1rem !important; border-color: #999;"
                 >
                     RTL/LTR
                 </a>
-            </li> &nbsp;
+            </li>
+            &nbsp;
             <li class="nav-item dropdown" ngbDropdown>
                 <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
                     <i class="fa fa-envelope"></i> <b class="caret"></b><span class="sr-only">(current)</span>
                 </a>
                 <ul class="dropdown-menu-right messages" ngbDropdownMenu>
                     <li class="media">
-                        <img class="d-flex align-self-center mr-3"
-                            src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="Generic placeholder image"
-                        >
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">John Smith</h5>
-                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                            <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                    </li>
-                    <li class="media">
-                        <img class="d-flex align-self-center mr-3"
-                            src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg"
+                        <img
                             alt="Generic placeholder image"
-                        >
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">John Smith</h5>
-                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                            <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
-                        </div>
-                    </li>
-                    <li class="media">
-                        <img class="d-flex align-self-center mr-3"
+                            class="d-flex align-self-center mr-3"
                             src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg"
-                            alt="Generic placeholder image"
                         />
                         <div class="media-body">
                             <h5 class="mt-0 mb-1">John Smith</h5>
                             <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                            <p class="last"> Lorem ipsum dolor sit amet, consectetur...</p>
+                            <p class="last">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img
+                            alt="Generic placeholder image"
+                            class="d-flex align-self-center mr-3"
+                            src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg"
+                        />
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">John Smith</h5>
+                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                            <p class="last">Lorem ipsum dolor sit amet, consectetur...</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img
+                            alt="Generic placeholder image"
+                            class="d-flex align-self-center mr-3"
+                            src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg"
+                        />
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">John Smith</h5>
+                            <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                            <p class="last">Lorem ipsum dolor sit amet, consectetur...</p>
                         </div>
                     </li>
                 </ul>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
-                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
                     <i class="fa fa-bell"></i> <b class="caret"></b><span class="sr-only">(current)</span>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
-                    <a href="javascript:void(0)" class="dropdown-item">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         {{ 'Pending Task' | translate }} <span class="badge badge-info">6</span>
                     </a>
-                    <a href="javascript:void(0)" class="dropdown-item">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         {{ 'In queue' | translate }} <span class="badge badge-info"> 13</span>
                     </a>
-                    <a href="javascript:void(0)" class="dropdown-item">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         {{ 'Mail' | translate }} <span class="badge badge-info"> 45</span>
                     </a>
                     <li class="dropdown-divider"></li>
-                    <a href="javascript:void(0)" class="dropdown-item">
+                    <a class="dropdown-item" href="javascript:void(0)">
                         {{ 'View All' | translate }}
                     </a>
                 </div>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
-                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
                     <i class="fa fa-language"></i> {{ 'Language' | translate }} <b class="caret"></b>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('en')">
+                    <a (click)="changeLang('en')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'English' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fr')">
+                    <a (click)="changeLang('fr')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'French' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('ur')">
+                    <a (click)="changeLang('ur')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'Urdu' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('es')">
+                    <a (click)="changeLang('es')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'Spanish' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('it')">
+                    <a (click)="changeLang('it')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'Italian' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('fa')">
+                    <a (click)="changeLang('fa')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'Farsi' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('de')">
+                    <a (click)="changeLang('de')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'German' | translate }}
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0)" (click)="changeLang('zh-CHS')">
+                    <a (click)="changeLang('zh-CHS')" class="dropdown-item" href="javascript:void(0)">
                         {{ 'Simplified Chinese' | translate }}
                     </a>
                 </div>
             </li>
             <li class="nav-item dropdown" ngbDropdown>
-                <a href="javascript:void(0)" class="nav-link" ngbDropdownToggle>
+                <a class="nav-link" href="javascript:void(0)" ngbDropdownToggle>
                     <i class="fa fa-user"></i> John Smith <b class="caret"></b>
                 </a>
                 <div class="dropdown-menu-right" ngbDropdownMenu>
@@ -130,7 +139,7 @@
                     <a class="dropdown-item" href="javascript:void(0)">
                         <i class="fa fa-fw fa-gear"></i> {{ 'Settings' | translate }}
                     </a>
-                    <a class="dropdown-item" [routerLink]="['/login']" (click)="onLoggedout()">
+                    <a (click)="onLoggedout()" [routerLink]="['/login']" class="dropdown-item">
                         <i class="fa fa-fw fa-power-off"></i> {{ 'Log Out' | translate }}
                     </a>
                 </div>

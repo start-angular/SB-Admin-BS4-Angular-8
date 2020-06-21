@@ -6,13 +6,11 @@ describe('BlankPageComponent', () => {
     let component: BlankPageComponent;
     let fixture: ComponentFixture<BlankPageComponent>;
 
-    beforeEach(
-        async(() => {
-            TestBed.configureTestingModule({
-                declarations: [BlankPageComponent]
-            }).compileComponents();
-        })
-    );
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [BlankPageComponent]
+        }).compileComponents();
+    }));
 
     beforeEach(() => {
         fixture = TestBed.createComponent(BlankPageComponent);

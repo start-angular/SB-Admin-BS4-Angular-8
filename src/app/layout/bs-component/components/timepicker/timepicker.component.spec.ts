@@ -5,27 +5,23 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TimepickerComponent } from './timepicker.component';
 
 describe('TimepickerComponent', () => {
-  let component: TimepickerComponent;
-  let fixture: ComponentFixture<TimepickerComponent>;
+    let component: TimepickerComponent;
+    let fixture: ComponentFixture<TimepickerComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        FormsModule,
-        NgbModule
-      ],
-      declarations: [ TimepickerComponent ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [FormsModule, NgbModule],
+            declarations: [TimepickerComponent]
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(TimepickerComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(TimepickerComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

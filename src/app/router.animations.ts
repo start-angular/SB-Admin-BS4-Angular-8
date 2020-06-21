@@ -1,7 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export function routerTransition() {
-
     return noTransition();
 }
 

@@ -4,24 +4,23 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CollapseComponent } from './collapse.component';
 
 describe('CollapseComponent', () => {
-  let component: CollapseComponent;
-  let fixture: ComponentFixture<CollapseComponent>;
+    let component: CollapseComponent;
+    let fixture: ComponentFixture<CollapseComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [ NgbModule ],
-      declarations: [ CollapseComponent ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            imports: [NgbModule],
+            declarations: [CollapseComponent]
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CollapseComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(CollapseComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

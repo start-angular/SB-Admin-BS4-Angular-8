@@ -1,21 +1,31 @@
-<div class="login-page" [@routerTransition]>
+<div [@routerTransition] class="login-page">
     <div class="row justify-content-md-center">
         <div class="col-md-4">
-            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
-            <h1>SB Admin BS4 Angular8</h1>
+            <img class="user-avatar" src="assets/images/logo.png" width="150px" />
+            <h1>SB Admin BS4 Angular9</h1>
             <form role="form">
                 <div class="form-content">
                     <div class="form-group">
-                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="{{ 'Email' | translate }}">
+                        <input
+                            [placeholder]="'Email' | translate"
+                            class="form-control input-underline input-lg"
+                            type="text"
+                        />
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="{{ 'Password' | translate }}">
+                        <input
+                            [placeholder]="'Password' | translate"
+                            class="form-control input-underline input-lg"
+                            type="password"
+                        />
                     </div>
                 </div>
-                <a class="btn rounded-btn" [routerLink]="['/dashboard']" (click)="onLoggedin()">{{ 'Log in' | translate }}</a>
+                <a (click)="onLoggedin()" [routerLink]="['/dashboard']" class="btn rounded-btn">{{
+                    'Log in' | translate
+                }}</a>
                 &nbsp;
-                <a class="btn rounded-btn" [routerLink]="['/signup']">{{ 'Register' | translate }}</a>
+                <a [routerLink]="['/signup']" class="btn rounded-btn">{{ 'Register' | translate }}</a>
             </form>
         </div>
     </div>

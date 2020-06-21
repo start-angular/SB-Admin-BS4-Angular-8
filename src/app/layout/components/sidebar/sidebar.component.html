@@ -1,39 +1,39 @@
-<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+<nav [ngClass]="{ sidebarPushRight: isActive, collapsed: collapsed }" class="sidebar">
     <div class="list-group">
-        <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" class="list-group-item" routerLink="/dashboard">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
             <span>{{ 'Dashboard' | translate }}</span>
         </a>
-        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/charts']" class="list-group-item">
             <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
             <span>{{ 'Charts' | translate }}</span>
         </a>
-        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/tables']" class="list-group-item">
             <i class="fa fa-fw fa-table"></i>&nbsp;
             <span>{{ 'Tables' | translate }}</span>
         </a>
-        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/forms']" class="list-group-item">
             <i class="fa fa-fw fa-edit"></i>&nbsp;
             <span>{{ 'Forms' | translate }}</span>
         </a>
-        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/bs-element']" class="list-group-item">
             <i class="fa fa-fw fa-desktop"></i>&nbsp;
             <span>{{ 'Bootstrap Element' | translate }}</span>
         </a>
-        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/grid']" class="list-group-item">
             <i class="fa fa-fw fa-wrench"></i>&nbsp;
             <span>{{ 'Bootstrap Grid' | translate }}</span>
         </a>
-        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/components']" class="list-group-item">
             <i class="fa fa-th-list"></i>&nbsp;
             <span>{{ 'Component' | translate }}</span>
         </a>
         <div class="nested-menu">
-            <a class="list-group-item" (click)="addExpandClass('pages')">
+            <a (click)="addExpandClass('pages')" class="list-group-item">
                 <i class="fa fa-plus"></i>&nbsp;
                 <span>{{ 'Menu' | translate }}</span>
             </a>
-            <li class="nested" [class.expand]="showMenu === 'pages'">
+            <li [class.expand]="showMenu === 'pages'" class="nested">
                 <ul class="submenu">
                     <li>
                         <a href="javascript:void(0)">
@@ -56,11 +56,11 @@
                 </ul>
             </li>
         </div>
-        <a [routerLink]="['/blank-page']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/blank-page']" class="list-group-item">
             <i class="fa fa-file-o"></i>&nbsp;
             <span>{{ 'Blank Page' | translate }}</span>
         </a>
-        <a href="http://www.strapui.com/" class="list-group-item">
+        <a class="list-group-item" href="http://www.strapui.com/">
             <i class="fa fa-caret-down"></i>&nbsp;
             <span>{{ 'More Themes' | translate }}</span>
         </a>
@@ -70,43 +70,43 @@
                 <span><i class="fa fa-arrows-h"></i>&nbsp; RTL/LTR</span>
             </a>
             <div class="nested-menu">
-                <a class="list-group-item" (click)="addExpandClass('languages')">
+                <a (click)="addExpandClass('languages')" class="list-group-item">
                     <span><i class="fa fa-language"></i>&nbsp; {{ 'Language' | translate }} <b class="caret"></b></span>
                 </a>
-                <li class="nested" [class.expand]="showMenu === 'languages'">
+                <li [class.expand]="showMenu === 'languages'" class="nested">
                     <ul class="submenu">
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('en')">
+                            <a (click)="changeLang('en')" href="javascript:void(0)">
                                 {{ 'English' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('fr')">
+                            <a (click)="changeLang('fr')" href="javascript:void(0)">
                                 {{ 'French' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('ur')">
+                            <a (click)="changeLang('ur')" href="javascript:void(0)">
                                 {{ 'Urdu' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('es')">
+                            <a (click)="changeLang('es')" href="javascript:void(0)">
                                 {{ 'Spanish' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('it')">
+                            <a (click)="changeLang('it')" href="javascript:void(0)">
                                 {{ 'Italian' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('fa')">
+                            <a (click)="changeLang('fa')" href="javascript:void(0)">
                                 {{ 'Farsi' | translate }}
                             </a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)" (click)="changeLang('de')">
+                            <a (click)="changeLang('de')" href="javascript:void(0)">
                                 {{ 'German' | translate }}
                             </a>
                         </li>
@@ -114,10 +114,10 @@
                 </li>
             </div>
             <div class="nested-menu">
-                <a class="list-group-item" (click)="addExpandClass('profile')">
+                <a (click)="addExpandClass('profile')" class="list-group-item">
                     <span><i class="fa fa-user"></i>&nbsp; John Smith</span>
                 </a>
-                <li class="nested" [class.expand]="showMenu === 'profile'">
+                <li [class.expand]="showMenu === 'profile'" class="nested">
                     <ul class="submenu">
                         <li>
                             <a href="javascript:void(0)">
@@ -135,7 +135,7 @@
                             </a>
                         </li>
                         <li>
-                            <a [routerLink]="['/login']" (click)="onLoggedout()">
+                            <a (click)="onLoggedout()" [routerLink]="['/login']">
                                 <span><i class="fa fa-fw fa-power-off"></i> {{ 'Log Out' | translate }}</span>
                             </a>
                         </li>
@@ -144,8 +144,8 @@
             </div>
         </div>
     </div>
-    <div class="toggle-button" [ngClass]="{collapsed: collapsed}" (click)="toggleCollapsed()">
-        <i class="fa fa-fw fa-angle-double-{{collapsed?'right':'left'}}"></i>&nbsp;
+    <div (click)="toggleCollapsed()" [ngClass]="{ collapsed: collapsed }" class="toggle-button">
+        <i class="fa fa-fw fa-angle-double-{{ collapsed ? 'right' : 'left' }}"></i>&nbsp;
         <span>{{ 'Collapse Sidebar' | translate }}</span>
     </div>
 </nav>

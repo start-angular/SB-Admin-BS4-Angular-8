@@ -1,36 +1,29 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PageHeaderModule } from '../../shared';
 
 import { BsComponentRoutingModule } from './bs-component-routing.module';
 import { BsComponentComponent } from './bs-component.component';
 import {
     AlertComponent,
     ButtonsComponent,
-    ModalComponent,
     CollapseComponent,
     DatePickerComponent,
     DropdownComponent,
+    ModalComponent,
     PaginationComponent,
     PopOverComponent,
     ProgressbarComponent,
-    TabsComponent,
     RatingComponent,
-    TooltipComponent,
-    TimepickerComponent
+    TabsComponent,
+    TimepickerComponent,
+    TooltipComponent
 } from './components';
-import { PageHeaderModule } from '../../shared';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        BsComponentRoutingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        NgbModule,
-        PageHeaderModule
-    ],
+    imports: [CommonModule, BsComponentRoutingModule, FormsModule, ReactiveFormsModule, NgbModule, PageHeaderModule],
     declarations: [
         BsComponentComponent,
         ButtonsComponent,

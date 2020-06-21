@@ -3,21 +3,21 @@
         Tooltip
     </div>
     <div class="card-body">
-        <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="Tooltip on top">
-          Tooltip on top
+        <button class="btn btn-secondary" ngbTooltip="Tooltip on top" placement="top" type="button">
+            Tooltip on top
         </button>
-        <button type="button" class="btn btn-secondary" placement="right" ngbTooltip="Tooltip on right">
-          Tooltip on right
+        <button class="btn btn-secondary" ngbTooltip="Tooltip on right" placement="right" type="button">
+            Tooltip on right
         </button>
-        <button type="button" class="btn btn-secondary" placement="bottom" ngbTooltip="Tooltip on bottom">
-          Tooltip on bottom
+        <button class="btn btn-secondary" ngbTooltip="Tooltip on bottom" placement="bottom" type="button">
+            Tooltip on bottom
         </button>
-        <button type="button" class="btn btn-secondary" placement="left" ngbTooltip="Tooltip on left">
-          Tooltip on left
+        <button class="btn btn-secondary" ngbTooltip="Tooltip on left" placement="left" type="button">
+            Tooltip on left
         </button>
         <ng-template #StaticTipContent><em>Tooltip</em> <u>with</u> <b>HTML</b></ng-template>
-        <button type="button" class="btn btn-secondary" data-html="true" [ngbTooltip]="StaticTipContent">
-          Tooltip with HTML
+        <button [ngbTooltip]="StaticTipContent" class="btn btn-secondary" data-html="true" type="button">
+            Tooltip with HTML
         </button>
     </div>
 </div>

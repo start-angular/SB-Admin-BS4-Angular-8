@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ServerErrorComponent } from './server-error.component';
 
 const routes: Routes = [
     {
-        path: '', component: ServerErrorComponent
+        path: '',
+        component: ServerErrorComponent
     }
 ];
 
@@ -12,5 +13,4 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class ServerErrorRoutingModule {
-}
+export class ServerErrorRoutingModule {}

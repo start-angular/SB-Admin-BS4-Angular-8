@@ -4,11 +4,11 @@
             <div class="card-header">Modal</div>
             <!-- Large modal -->
             <div class="card-body">
-                <button class="btn btn-primary" (click)="open(content)">Large modal</button>
+                <button (click)="open(content)" class="btn btn-primary">Large modal</button>
                 <ng-template #content let-c="close" let-d="dismiss">
                     <div class="modal-header">
                         <h4 class="modal-title">Modal title</h4>
-                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                        <button (click)="d('Cross click')" aria-label="Close" class="close" type="button">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -16,7 +16,7 @@
                         <p>One fine body&hellip;</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+                        <button (click)="c('Close click')" class="btn btn-secondary" type="button">Close</button>
                     </div>
                 </ng-template>
             </div>
