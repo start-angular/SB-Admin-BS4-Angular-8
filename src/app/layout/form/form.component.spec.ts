@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -9,7 +9,7 @@ describe('FormComponent', () => {
     let component: FormComponent;
     let fixture: ComponentFixture<FormComponent>;
 
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             imports: [FormModule, BrowserAnimationsModule, RouterTestingModule]
         }).compileComponents();

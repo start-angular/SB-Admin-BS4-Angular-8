@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ServerErrorComponent } from './server-error.component';
 
@@ -6,7 +6,7 @@ describe('ServerErrorComponent', () => {
     let component: ServerErrorComponent;
     let fixture: ComponentFixture<ServerErrorComponent>;
 
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             declarations: [ServerErrorComponent]
         }).compileComponents();

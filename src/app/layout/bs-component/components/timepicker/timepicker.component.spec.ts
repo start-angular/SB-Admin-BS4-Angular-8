@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,7 +8,7 @@ describe('TimepickerComponent', () => {
     let component: TimepickerComponent;
     let fixture: ComponentFixture<TimepickerComponent>;
 
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             imports: [FormsModule, NgbModule],
             declarations: [TimepickerComponent]

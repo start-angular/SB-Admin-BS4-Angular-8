@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { BsComponentModule } from '../../bs-component.module';
 
@@ -8,7 +8,7 @@ describe('TooltipComponent', () => {
     let component: TooltipComponent;
     let fixture: ComponentFixture<TooltipComponent>;
 
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             imports: [BsComponentModule, RouterTestingModule]
         }).compileComponents();

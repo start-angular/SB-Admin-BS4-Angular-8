@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -8,7 +8,7 @@ describe('ButtonsComponent', () => {
     let component: ButtonsComponent;
     let fixture: ComponentFixture<ButtonsComponent>;
 
-    beforeEach(async(() => {
+    beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
             imports: [FormsModule, ReactiveFormsModule, NgbModule],
             declarations: [ButtonsComponent]
