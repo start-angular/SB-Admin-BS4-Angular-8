@@ -26,7 +26,7 @@
     "@ng-bootstrap/ng-bootstrap": "7.0.0",
     "@ngx-translate/core": "13.0.0",
     "@ngx-translate/http-loader": "6.0.0",
-    "chart.js": "2.9.3",
+    "chart.js": "2.9.4",
     "core-js": "3.6.5",
     "font-awesome": "4.7.0",
     "ng2-charts": "2.4.2",
