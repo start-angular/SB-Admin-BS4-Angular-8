@@ -5927,8 +5927,8 @@ npmlog@^4.0.2, npmlog@^4.1.2:
     set-blocking "~2.0.0"
 
 nth-check@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.0.tgz#1bb4f6dac70072fc313e8c9cd1417b5074c0a125"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nth-check/-/nth-check-2.0.1.tgz#2efe162f5c3da06a28959fbd3db75dbeea9f0fc2"
   dependencies:
     boolbase "^1.0.0"
 
