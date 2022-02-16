@@ -19,7 +19,14 @@
                         "assets": ["src/assets", "src/favicon.ico"],
                         "styles": ["node_modules/font-awesome/css/font-awesome.css", "src/styles/app.scss"],
                         "scripts": ["node_modules/chart.js/dist/Chart.js"],
-                        "allowedCommonJsDependencies": ["chart.js"]
+                        "allowedCommonJsDependencies": ["chart.js"],
+                        "aot": false,
+                        "vendorChunk": true,
+                        "extractLicenses": false,
+                        "buildOptimizer": false,
+                        "sourceMap": true,
+                        "optimization": false,
+                        "namedChunks": true
                     },
                     "configurations": {
                         "production": {
@@ -45,7 +52,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "defaultConfiguration": ""
                 },
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
