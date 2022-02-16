@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../../router.animations';
+import { ChartData, ChartType } from "chart.js";
 
 @Component({
     selector: 'app-charts',
@@ -14,7 +15,7 @@ export class ChartsComponent implements OnInit {
         responsive: true
     };
     public barChartLabels: string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-    public barChartType: string;
+    public barChartType: ChartType;
     public barChartLegend: boolean;
 
     public barChartData: any[] = [
@@ -24,8 +25,15 @@ export class ChartsComponent implements OnInit {
 
     // Doughnut
     public doughnutChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-    public doughnutChartData: number[] = [350, 450, 100];
-    public doughnutChartType: string;
+    public doughnutChartData: ChartData<'doughnut'> = {
+        labels: this.doughnutChartLabels,
+        datasets: [
+            { data: [ 350, 450, 100 ] },
+            { data: [ 50, 150, 120 ] },
+            { data: [ 250, 130, 70 ] }
+        ]
+    };
+    public doughnutChartType: ChartType = 'doughnut';
 
     // Radar
     public radarChartLabels: string[] = ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'];
@@ -33,12 +41,18 @@ export class ChartsComponent implements OnInit {
         { data: [65, 59, 90, 81, 56, 55, 40], label: 'Series A' },
         { data: [28, 48, 40, 19, 96, 27, 100], label: 'Series B' }
     ];
-    public radarChartType: string;
+    public radarChartType: ChartType;
 
     // Pie
-    public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-    public pieChartData: number[] = [300, 500, 100];
-    public pieChartType: string;
+    // public pieChartLabels: string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
+    // public pieChartData: number[] = [300, 500, 100];
+    public pieChartData: ChartData<'pie', number[], string | string[]> = {
+        labels: [ [ 'Download', 'Sales' ], [ 'In', 'Store', 'Sales' ], 'Mail Sales' ],
+        datasets: [ {
+            data: [ 300, 500, 100 ]
+        } ]
+    };
+    public pieChartType: ChartType;
 
     // PolarArea
     public polarAreaChartLabels: string[] = [
@@ -48,10 +62,17 @@ export class ChartsComponent implements OnInit {
         'Telesales',
         'Corporate Sales'
     ];
-    public polarAreaChartData: number[] = [300, 500, 100, 40, 120];
+    public polarAreaChartData: ChartData<'polarArea'> = {
+        labels: this.polarAreaChartLabels,
+        datasets: [ {
+            data: [ 300, 500, 100, 40, 120 ],
+            label: 'Series 1'
+        } ]
+    };
+
     public polarAreaLegend: boolean;
 
-    public polarAreaChartType: string;
+    public polarAreaChartType: ChartType;
 
     // lineChart
     public lineChartData: Array<any> = [
@@ -93,7 +114,7 @@ export class ChartsComponent implements OnInit {
         }
     ];
     public lineChartLegend: boolean;
-    public lineChartType: string;
+    public lineChartType: ChartType;
 
     constructor() {}
 
@@ -123,7 +144,7 @@ export class ChartsComponent implements OnInit {
     ngOnInit() {
         this.barChartType = 'bar';
         this.barChartLegend = true;
-        this.doughnutChartType = 'doughnut';
+        // this.doughnutChartType = 'doughnut';
         this.radarChartType = 'radar';
         this.pieChartType = 'pie';
         this.polarAreaLegend = true;

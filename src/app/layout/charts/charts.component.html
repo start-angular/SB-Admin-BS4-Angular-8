@@ -10,7 +10,7 @@
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="barChartType"
+                        [type]="barChartType"
                         [datasets]="barChartData"
                         [labels]="barChartLabels"
                         [legend]="barChartLegend"
@@ -33,7 +33,7 @@
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="doughnutChartType"
+                        [type]="doughnutChartType"
                         [data]="doughnutChartData"
                         [labels]="doughnutChartLabels"
                         baseChart
@@ -54,7 +54,7 @@
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="radarChartType"
+                        [type]="radarChartType"
                         [datasets]="radarChartData"
                         [labels]="radarChartLabels"
                         baseChart
@@ -73,9 +73,8 @@
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="pieChartType"
+                        [type]="pieChartType"
                         [data]="pieChartData"
-                        [labels]="pieChartLabels"
                         baseChart
                         height="150px"
                     >
@@ -94,7 +93,7 @@
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="polarAreaChartType"
+                        [type]="polarAreaChartType"
                         [data]="polarAreaChartData"
                         [labels]="polarAreaChartLabels"
                         [legend]="polarAreaLegend"
@@ -111,11 +110,11 @@
                     Line Chart
                 </div>
                 <div class="card-body">
+                    <!--[colors]="lineChartColors"-->
                     <canvas
                         (chartClick)="chartClicked($event)"
                         (chartHover)="chartHovered($event)"
-                        [chartType]="lineChartType"
-                        [colors]="lineChartColors"
+                        [type]="lineChartType"
                         [datasets]="lineChartData"
                         [labels]="lineChartLabels"
                         [legend]="lineChartLegend"

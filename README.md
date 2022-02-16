@@ -1,8 +1,8 @@
-# SB Admin rewritten in Angular9 and Bootstrap 4
+# SB Admin rewritten in Angular 13 and Bootstrap 5
 
-Simple Dashboard Admin App built using Angular 9 and Bootstrap 4
+Simple Dashboard Admin App built using Angular 13 and Bootstrap 5
 
-This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v8.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular9 Theme.
+This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v8.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular 13 Theme.
 
 Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.com/)
 
@@ -10,19 +10,19 @@ Powered by [StartAngular](http://startangular.com/) & [StrapUI](http://strapui.c
 
 ## [SB Admin Material version](https://github.com/start-javascript/sb-admin-material)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ### Introduction
 
 Provides fast, reliable and extensible starter for the development of Angular projects.
 
-`sb-admin-bs4-angular9` provides the following features:
+`sb-admin-bs5-angular13` provides the following features:
 
 -   Developed using boostrap-v6.0.0
--   angular-v9.0.2
--   angular/cli-v9.0.2
--   [ng-bootstrap-v6.0.0](https://github.com/ng-bootstrap/)
--   [ngx-translate-v12.1.1](https://github.com/ngx-translate)
+-   angular-v13.2.2
+-   angular/cli-v13.2.2
+-   [ng-bootstrap-v12.0.0](https://github.com/ng-bootstrap/)
+-   [ngx-translate-v14.0.0](https://github.com/ngx-translate)
 -   Following the best practices.
 -   Ahead-of-Time compilation support.
 -   Official Angular i18n support.
@@ -31,7 +31,7 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 
 ### How to start
 
-**Note** that this seed project requires **node >=v8.9.0 and npm >=4**.
+**Note** that this seed project requires **node >=v12.0.0 and npm >=6**.
 
 In order to start the project use:
 
