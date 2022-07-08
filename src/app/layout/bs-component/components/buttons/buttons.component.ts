@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
     selector: 'app-buttons',
@@ -8,9 +8,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ButtonsComponent implements OnInit {
     model: any = 1;
-    public radioGroupForm: FormGroup;
+    public radioGroupForm: UntypedFormGroup;
 
-    constructor(private formBuilder: FormBuilder) {}
+    constructor(private formBuilder: UntypedFormBuilder) {}
 
     ngOnInit() {
         this.radioGroupForm = this.formBuilder.group({

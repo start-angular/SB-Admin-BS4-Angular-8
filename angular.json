@@ -106,7 +106,6 @@
             }
         }
     },
-    "defaultProject": "test-ng7",
     "schematics": {
         "@schematics/angular:component": {
             "prefix": "app",
@@ -115,5 +114,8 @@
         "@schematics/angular:directive": {
             "prefix": "app"
         }
+    },
+    "cli": {
+      "analytics": "0ccfd754-79ab-4bf6-b9ef-ef066366d8c7"
     }
 }
