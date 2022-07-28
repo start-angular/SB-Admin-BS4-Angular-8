@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --configuration production",
-    "gitbuild": "ng build --configuration production --base-href /start-angular/SB-Admin-BS4-Angular-7/master/dist/",
+    "gitbuild": "ng build --configuration production --base-href /start-angular/SB-Admin-BS4-Angular-8/master/dist/",
     "test": "ng test",
     "test-ci": "TEST_CI=true ng test",
     "lint": "ng lint",
