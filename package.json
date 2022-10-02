@@ -1,5 +1,5 @@
 {
-    "name": "sb-admin-bs4-angular-9",
+    "name": "sb-admin-angular14-bs5",
     "version": "10.0.0",
     "license": "Apache",
     "scripts": {
@@ -26,6 +26,7 @@
         "@ng-bootstrap/ng-bootstrap": "13.0.0",
         "@ngx-translate/core": "14.0.0",
         "@ngx-translate/http-loader": "7.0.0",
+        "@popperjs/core": "^2.11.6",
         "bootstrap": "5.2.0",
         "chart.js": "3.7.1",
         "core-js": "3.21.0",

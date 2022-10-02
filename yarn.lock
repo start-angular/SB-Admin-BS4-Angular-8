@@ -1508,6 +1508,11 @@
     "read-package-json-fast" "^2.0.3"
     "which" "^2.0.2"
 
+"@popperjs/core@^2.11.6":
+  "integrity" "sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw=="
+  "resolved" "https://registry.npmjs.org/@popperjs/core/-/core-2.11.6.tgz"
+  "version" "2.11.6"
+
 "@schematics/angular@14.2.4":
   "integrity" "sha512-9n7HyxZvoSR+Ynyvr8oEQ3zy5trSjCQMTF+fZSTCzCBEVHKGxqMyisI6KO4qcGeIQYGXWeBYrMsy9jMQFgK8dQ=="
   "resolved" "https://registry.npmjs.org/@schematics/angular/-/angular-14.2.4.tgz"
