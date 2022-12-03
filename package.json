@@ -15,7 +15,8 @@
         "heroku-start": "node server.js"
     },
     "engines": {
-        "node": "18.12.1"
+        "node": "18.12.x",
+        "yarn": "1.22.x"
     },
     "private": true,
     "dependencies": {
