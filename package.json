@@ -34,6 +34,7 @@
         "@ngx-translate/core": "14.0.0",
         "@ngx-translate/http-loader": "7.0.0",
         "@popperjs/core": "2.11.6",
+        "@types/chart.js": "^2.9.37",
         "bootstrap": "5.2.2",
         "chart.js": "3.7.1",
         "core-js": "3.26.0",
