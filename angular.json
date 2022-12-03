@@ -79,7 +79,6 @@
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "src/tsconfig.spec.json",
                         "karmaConfig": "src/karma.conf.js",
-                        "scripts": ["node_modules/chart.js/dist/Chart.js"],
                         "styles": ["node_modules/font-awesome/css/font-awesome.css", "src/styles/app.scss"],
                         "assets": ["src/assets", "src/favicon.ico"]
                     }
