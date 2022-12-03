@@ -1,1 +1,1 @@
-web: yarn heroku-start
+web: node server.js
