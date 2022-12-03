@@ -11,7 +11,7 @@
         "test-ci": "TEST_CI=true ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "preinstall": "yarn install -g @angular/cli @angular/compiler-cli typescript",
+        "preinstall": "yarn global add @angular/cli @angular/compiler-cli typescript",
         "heroku-postbuild": "ng build",
         "heroku-start": "node server.js"
     },
