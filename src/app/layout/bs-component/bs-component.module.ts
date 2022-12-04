@@ -17,7 +17,6 @@ import {
     PopOverComponent,
     ProgressbarComponent,
     RatingComponent,
-    // TabsComponent,
     TimepickerComponent,
     TooltipComponent
 } from './components';
@@ -35,7 +34,6 @@ import {
         PaginationComponent,
         PopOverComponent,
         ProgressbarComponent,
-        // TabsComponent,
         RatingComponent,
         TooltipComponent,
         TimepickerComponent

@@ -21,27 +21,38 @@
     <hr />
     <div class="row">
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'primary'" [count]="26" [icon]="'fa-comments'" [label]="'New Comments!'"></app-stat>
+            <app-stat 
+                [bgClass]="'primary'" 
+                [count]="26" 
+                [icon]="'fa-comments'" 
+                [label]="'In Progress!'">
+            </app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'warning'" [count]="12" [icon]="'fa-tasks'" [label]="'New task!'"></app-stat>
+            <app-stat 
+                [bgClass]="'success'" 
+                [count]="12" 
+                [icon]="'fa-tasks'" 
+                [label]="'Pending Action!'">
+            </app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
             <app-stat
-                [bgClass]="'success'"
+                [bgClass]="'warning'"
                 [count]="124"
                 [icon]="'fa-shopping-cart'"
                 [label]="'New Orders!'"
             ></app-stat>
         </div>
         <div class="col-xl-3 col-lg-6">
-            <app-stat [bgClass]="'danger'" [count]="13" [icon]="'fa-support'" [label]="'New Tickets!'"></app-stat>
+            <app-stat 
+                [bgClass]="'danger'" 
+                [count]="13" 
+                [icon]="'fa-support'" 
+                [label]="'Completed!'">
+            </app-stat>
         </div>
     </div>
-    <hr />
-    <ngb-alert (close)="closeAlert(alert)" *ngFor="let alert of alerts" [type]="alert.type">{{
-        alert.message
-    }}</ngb-alert>
     <hr />
     <div class="row">
         <div class="col-lg-8">
