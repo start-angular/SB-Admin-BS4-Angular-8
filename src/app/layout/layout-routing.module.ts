@@ -14,6 +14,7 @@ const routes: Routes = [
             },
             { path: 'charts', loadChildren: () => import('./charts/charts.module').then((m) => m.ChartsModule) },
             { path: 'tables', loadChildren: () => import('./tables/tables.module').then((m) => m.TablesModule) },
+            { path: 'requests', loadChildren: () => import('./requests/requests.module').then((m) => m.RequestsModule) },
             { path: 'forms', loadChildren: () => import('./form/form.module').then((m) => m.FormModule) },
             {
                 path: 'bs-element',

@@ -4,6 +4,10 @@
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
             <span>{{ 'Dashboard' | translate }}</span>
         </a>
+        <a [routerLinkActive]="['router-link-active']" [routerLink]="['/requests']" class="list-group-item">
+            <i class="fa fa-fw fa-dashboard"></i>&nbsp;
+            <span>{{ 'Requests' | translate }}</span>
+        </a>
         <a [routerLinkActive]="['router-link-active']" [routerLink]="['/charts']" class="list-group-item">
             <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
             <span>{{ 'Charts' | translate }}</span>
