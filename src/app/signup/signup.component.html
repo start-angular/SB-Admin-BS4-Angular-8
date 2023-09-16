@@ -1,7 +1,7 @@
 <div [@routerTransition] class="login-page">
     <div class="row justify-content-md-center align-items-center h-100">
         <div class="col-md-4">
-            <img class="user-avatar" src="assets/images/logo.png" [style.width.px]="150" />
+            <img class="user-avatar" src="assets/images/logo.png" [style.width.px]="150" alt="logo" />
             <h1>SB Admin BS4 Angular9</h1>
             <form role="form">
                 <div class="form-content">
@@ -36,8 +36,7 @@
                         />
                     </div>
                 </div>
-                <a [routerLink]="['/dashboard']" class="btn rounded-btn">{{ 'Register' | translate }}</a
-                >&nbsp;
+                <a [routerLink]="['/dashboard']" class="btn rounded-btn mt-1">{{ 'Register' | translate }}</a>
                 <a [routerLink]="['/login']" class="btn rounded-btn">{{ 'Log in' | translate }}</a>
             </form>
         </div>
