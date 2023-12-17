@@ -9,6 +9,6 @@ describe('test-ng8 App', () => {
 
     it('should display welcome message', () => {
         page.navigateTo();
-        expect(page.getParagraphText()).toEqual('SB Admin BS4 Angular8');
+        expect(page.getParagraphText()).toEqual('SB Admin BS5 Angular8');
     });
 });
