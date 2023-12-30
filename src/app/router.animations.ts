@@ -1,11 +1,20 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export function routerTransition() {
-    return noTransition();
+    return fadeInAnimation();
 }
 
 export function noTransition() {
     return trigger('routerTransition', []);
+}
+
+export function fadeInAnimation() {
+    return trigger('routerTransition', [
+        state('void', style({})),
+        state('*', style({})),
+        transition(':enter', [style({ opacity: 0 }), animate(500, style({ opacity: 1 }))]),
+        transition(':leave', [animate(500, style({ opacity: 0 }))])
+    ]);
 }
 
 export function slideToRight() {
