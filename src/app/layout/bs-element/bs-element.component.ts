@@ -11,4 +11,5 @@ export class BsElementComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {}
+
 }

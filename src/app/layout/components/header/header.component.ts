@@ -37,6 +37,12 @@ export class HeaderComponent implements OnInit {
         dom.classList.toggle('rtl');
     }
 
+    upAndDown() {
+        const dom: any = document.querySelector('nav');
+        dom.classList.toggle('fixed-bottom');
+        dom.classList.toggle('fixed-top')
+    }
+
     onLoggedout() {
         localStorage.removeItem('isLoggedin');
     }

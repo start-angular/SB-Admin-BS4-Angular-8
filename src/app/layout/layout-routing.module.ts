@@ -27,6 +27,10 @@ const routes: Routes = [
             {
                 path: 'blank-page',
                 loadChildren: () => import('./blank-page/blank-page.module').then((m) => m.BlankPageModule)
+            },
+            {
+                path: 'profile',
+                loadChildren: () => import('../profile/profile.component').then((m) => m.ProfileComponent)
             }
         ]
     }
